@@ -1,0 +1,6 @@
+.color-white {
+  color: white !important;
+}
+.flexslider .flex-direction-nav, .flex-control-nav {
+  display: none !important;
+}
