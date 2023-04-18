@@ -1,6 +1,41 @@
 .color-white {
   color: white !important;
 }
+h2.color-white {
+  -webkit-text-stroke: 1px transparent;
+  text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px  1px 0 #000,
+          1px  1px 0 #000;
+}
 .flexslider .flex-direction-nav, .flex-control-nav {
   display: none !important;
+}
+.position {
+  position: relative;
+}
+.position::after {
+  content: "Tự Do";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 10px;
+  font-weight: bold;
+  background: linear-gradient(to right, #F7931A, #FFDD00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-name {
+  background: linear-gradient(to right, #F7931A, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-bitcoin {
+  background: linear-gradient(to right, black, #F7931A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.margin-bottom-80px {
+  margin-bottom: 80px;
 }
