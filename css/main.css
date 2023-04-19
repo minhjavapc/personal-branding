@@ -1,6 +1,9 @@
 .color-white {
   color: white !important;
 }
+.color-black {
+  color: black !important;
+}
 h2.color-white {
   -webkit-text-stroke: 1px transparent;
   text-shadow:
