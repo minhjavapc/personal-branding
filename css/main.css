@@ -12,20 +12,6 @@ h2.color-white {
 .flexslider .flex-direction-nav, .flex-control-nav {
   display: none !important;
 }
-.position {
-  position: relative;
-}
-.position::after {
-  content: "Tự Do";
-  position: absolute;
-  top: 0;
-  left: 100%;
-  margin-left: 10px;
-  font-weight: bold;
-  background: linear-gradient(to right, #F7931A, #FFDD00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .color-name {
   background: linear-gradient(to right, #F7931A, black);
   -webkit-background-clip: text;
@@ -38,4 +24,27 @@ h2.color-white {
 }
 .margin-bottom-80px {
   margin-bottom: 80px;
+}
+
+/* dịch vụ > thẻ a */
+.work-menu a {
+  color: #333; /* màu chữ mặc định */
+  text-decoration: none; /* không gạch chân mặc định */
+  background-color: transparent; /* màu nền trong suốt */
+  transition: all 0.3s ease; /* thời gian và tốc độ chuyển đổi */
+}
+
+.work-menu a:hover {
+  color: #f00; /* đổi màu chữ khi hover */
+  text-decoration: underline; /* gạch chân khi hover */
+  background-color: rgba(255, 0, 0, 0.1); /* màu nền trong suốt có độ mờ */
+}
+
+.work-menu a:focus {
+  outline: none; /* không có khung trên thẻ khi focus */
+}
+.project .desc .con span {
+  color: #fff; /* đổi màu chữ khi hover */
+  text-decoration: none; /* gạch chân khi hover */
+  background-color: rgba(255, 0, 0, 0.1); /* màu nền trong suốt có độ mờ */
 }
