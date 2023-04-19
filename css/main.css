@@ -22,29 +22,44 @@ h2.color-white {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.color-shopee {
+  background-color: rgb(238, 77, 45);
+}
 .margin-bottom-80px {
   margin-bottom: 80px;
 }
-
+.project-img img {
+  max-width: 100%;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
 /* dịch vụ > thẻ a */
-.work-menu a {
+.work-menu span a {
   color: #333; /* màu chữ mặc định */
   text-decoration: none; /* không gạch chân mặc định */
   background-color: transparent; /* màu nền trong suốt */
   transition: all 0.3s ease; /* thời gian và tốc độ chuyển đổi */
 }
-
-.work-menu a:hover {
+.work-menu span a:hover {
   color: #f00; /* đổi màu chữ khi hover */
   text-decoration: underline; /* gạch chân khi hover */
   background-color: rgba(255, 0, 0, 0.1); /* màu nền trong suốt có độ mờ */
 }
-
-.work-menu a:focus {
+.work-menu span a:focus {
   outline: none; /* không có khung trên thẻ khi focus */
 }
 .project .desc .con span {
   color: #fff; /* đổi màu chữ khi hover */
   text-decoration: none; /* gạch chân khi hover */
   background-color: rgba(255, 0, 0, 0.1); /* màu nền trong suốt có độ mờ */
+}
+.fa-stack:hover .fa-inverse {
+  color: #f8d653; /* thay đổi màu sắc thành màu đỏ */
+  cursor: pointer;
 }
