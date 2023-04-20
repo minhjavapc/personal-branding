@@ -26,7 +26,7 @@ h2.color-white {
   -webkit-text-fill-color: transparent;
 }
 .color-shopee {
-  background-color: rgb(238, 77, 45);
+  background-color: rgb(238, 77, 45) !important;
 }
 .margin-bottom-80px {
   margin-bottom: 80px;
@@ -71,7 +71,38 @@ h2.color-white {
   text-decoration: underline;
   cursor: pointer;
 }
-
+.project-shopping {
+  text-align: center;
+  height: 80px;
+  margin-top: 1rem;
+}
+.project-shopping img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.project-shopping .shopping-img img:hover {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
 /* dịch vụ > thẻ a */
 .work-menu span a {
   color: #333; /* màu chữ mặc định */
@@ -90,7 +121,7 @@ h2.color-white {
 .project .desc .con span {
   color: #fff; /* đổi màu chữ khi hover */
   text-decoration: none; /* gạch chân khi hover */
-  background-color: rgba(255, 0, 0, 0.1); /* màu nền trong suốt có độ mờ */
+  /*background-color: rgba(255, 0, 0, 0.1); !* màu nền trong suốt có độ mờ *!*/
 }
 .fa-stack:hover .fa-inverse {
   color: #f8d653; /* thay đổi màu sắc thành màu đỏ */
