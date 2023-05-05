@@ -1,129 +1,169 @@
+@media screen and (min-width: 1224px) {
+  .faa-horizontal.animated, .faa-horizontal.animated-hover:hover, .faa-parent.animated-hover:hover > .faa-horizontal {
+    -webkit-animation: horizontal 2s ease infinite;
+    animation: horizontal 2s ease infinite;
+  }
+}
+@-webkit-keyframes horizontal {
+    0%, 12%, 24%, 36% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    18%, 30%, 6% {
+        -webkit-transform: translate(5px, 0);
+        transform: translate(5px, 0)
+    }
+}
 .color-white {
-  color: white !important;
+    color: white !important;
 }
+
 .color-black {
-  color: black !important;
+    color: black !important;
 }
+
 h2.color-white {
-  -webkit-text-stroke: 1px transparent;
-  text-shadow:
-          -1px -1px 0 #000,
-          1px -1px 0 #000,
-          -1px  1px 0 #000,
-          1px  1px 0 #000;
+    -webkit-text-stroke: 1px transparent;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
+
 .flexslider .flex-direction-nav, .flex-control-nav {
-  display: none !important;
+    display: none !important;
 }
+
 .color-name {
-  background: linear-gradient(to right, #F7931A, black);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #F7931A, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .color-bitcoin {
-  background: linear-gradient(to right, black, #F7931A);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, black, #F7931A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .color-shopee {
-  background-color: rgb(238, 77, 45) !important;
+    background-color: rgb(238, 77, 45) !important;
 }
+
 .margin-bottom-80px {
-  margin-bottom: 80px;
+    margin-bottom: 80px;
 }
+
 .project-img img {
-  max-width: 100%;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+    max-width: 100%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
+
 .project:hover .project-img img {
-  /*opacity: 0.8;*/
-  cursor: pointer;
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.01);
+    /*opacity: 0.8;*/
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.01);
 }
+
 .project-desc i.fas {
-  font-size: 20px;
+    font-size: 20px;
 }
+
 .project-desc i.fa-gift {
-  color: #FFC107;
+    color: #FFC107;
 }
 
 .project-desc i.fa-user-tag {
-  color:#e0574e;
+    color: #e0574e;
 }
+
 .project-desc span {
-  color: #555;
-  font-weight: bold;
+    color: #555;
+    font-weight: bold;
 }
+
 .project:hover .project-desc span {
-  color: #2196F3; /* đổi màu chữ khi hover */
-  background-color: rgba(255, 0, 0, 0.1); /* màu nền trong suốt có độ mờ */
-  text-decoration: underline;
-  cursor: pointer;
+    color: #2196F3; /* đổi màu chữ khi hover */
+    background-color: rgba(255, 0, 0, 0.1); /* màu nền trong suốt có độ mờ */
+    text-decoration: underline;
+    cursor: pointer;
 }
+
 .project-shopping {
-  text-align: center;
-  height: 80px;
-  margin-top: 1rem;
+    text-align: center;
+    height: 80px;
+    margin-top: 1rem;
 }
+
 .project-shopping img {
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  border-radius: 5px;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 5px;
 }
+
 .project-shopping .shopping-img img:hover {
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
+
+.project .desc .con h3:hover a {
+    font-weight: bold;
+}
+
 /* dịch vụ > thẻ a */
 .work-menu span a {
-  color: #333; /* màu chữ mặc định */
-  text-decoration: none; /* không gạch chân mặc định */
-  background-color: transparent; /* màu nền trong suốt */
-  transition: all 0.3s ease; /* thời gian và tốc độ chuyển đổi */
+    color: #333; /* màu chữ mặc định */
+    text-decoration: none; /* không gạch chân mặc định */
+    background-color: transparent; /* màu nền trong suốt */
+    transition: all 0.3s ease; /* thời gian và tốc độ chuyển đổi */
 }
+
 .work-menu span a:hover {
-  color: #f00; /* đổi màu chữ khi hover */
-  background-color: rgba(255, 0, 0, 0.1); /* màu nền trong suốt có độ mờ */
-  text-decoration: underline; /* gạch chân khi hover */
+    color: #f00; /* đổi màu chữ khi hover */
+    background-color: rgba(255, 0, 0, 0.1); /* màu nền trong suốt có độ mờ */
+    text-decoration: underline; /* gạch chân khi hover */
 }
+
 .work-menu span a:focus {
-  outline: none; /* không có khung trên thẻ khi focus */
+    outline: none; /* không có khung trên thẻ khi focus */
 }
+
 .project .desc .con span {
-  color: #fff; /* đổi màu chữ khi hover */
-  text-decoration: none; /* gạch chân khi hover */
-  /*background-color: rgba(255, 0, 0, 0.1); !* màu nền trong suốt có độ mờ *!*/
+    color: #fff; /* đổi màu chữ khi hover */
+    text-decoration: none; /* gạch chân khi hover */
+    /*background-color: rgba(255, 0, 0, 0.1); !* màu nền trong suốt có độ mờ *!*/
 }
+
 .fa-stack:hover .fa-inverse {
-  color: #f8d653; /* thay đổi màu sắc thành màu đỏ */
-  cursor: pointer;
+    color: #f8d653; /* thay đổi màu sắc thành màu đỏ */
+    cursor: pointer;
 }
