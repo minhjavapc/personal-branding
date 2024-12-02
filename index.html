@@ -1,26 +1,27 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bàn Cờ Mới</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
-    <meta name="author" content=""/>
-    <meta property="og:title" content=""/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
-    <meta property="og:site_name" content=""/>
-    <meta property="og:description" content=""/>
-    <meta name="twitter:title" content=""/>
-    <meta name="twitter:image" content=""/>
-    <meta name="twitter:url" content=""/>
-    <meta name="twitter:card" content=""/>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
     <link rel="shortcut icon" href="img/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://preview.colorlib.com/theme/jackson/css/animate.css">
     <link rel="stylesheet" href="https://preview.colorlib.com/theme/jackson/css/icomoon.css">
     <link rel="stylesheet" href="https://preview.colorlib.com/theme/jackson/css/bootstrap.css">
@@ -41,1120 +42,1292 @@
     <script src="https://code.highcharts.com/highcharts-3d.js"></script>
 
     <script nonce="9eda1491-0cc1-4ea2-ae25-8f5e690a5a3e">(function (w, d) {
-        !function (cO, cP, cQ, cR) {
-            cO[cQ] = cO[cQ] || {};
-            cO[cQ].executed = [];
-            cO.zaraz = {deferred: [], listeners: []};
-            cO.zaraz.q = [];
-            cO.zaraz._f = function (cS) {
-                return function () {
-                    var cT = Array.prototype.slice.call(arguments);
-                    cO.zaraz.q.push({m: cS, a: cT})
-                }
-            };
-            for (const cU of ["track", "set", "debug"]) cO.zaraz[cU] = cO.zaraz._f(cU);
-            cO.zaraz.init = () => {
-                var cV = cP.getElementsByTagName(cR)[0], cW = cP.createElement(cR),
-                    cX = cP.getElementsByTagName("title")[0];
-                cX && (cO[cQ].t = cP.getElementsByTagName("title")[0].text);
-                cO[cQ].x = Math.random();
-                cO[cQ].w = cO.screen.width;
-                cO[cQ].h = cO.screen.height;
-                cO[cQ].j = cO.innerHeight;
-                cO[cQ].e = cO.innerWidth;
-                cO[cQ].l = cO.location.href;
-                cO[cQ].r = cP.referrer;
-                cO[cQ].k = cO.screen.colorDepth;
-                cO[cQ].n = cP.characterSet;
-                cO[cQ].o = (new Date).getTimezoneOffset();
-                if (cO.dataLayer) for (const da of Object.entries(Object.entries(dataLayer).reduce(((db, dc) => ({...db[1], ...dc[1]}))))) zaraz.set(da[0], da[1], {scope: "page"});
-                cO[cQ].q = [];
-                for (; cO.zaraz.q.length;) {
-                    const dd = cO.zaraz.q.shift();
-                    cO[cQ].q.push(dd)
-                }
-                cW.defer = !0;
-                for (const de of [localStorage, sessionStorage]) Object.keys(de || {}).filter((dg => dg.startsWith("_zaraz_"))).forEach((df => {
-                    try {
-                        cO[cQ]["z_" + df.slice(7)] = JSON.parse(de.getItem(df))
-                    } catch {
-                        cO[cQ]["z_" + df.slice(7)] = de.getItem(df)
+            !function (cO, cP, cQ, cR) {
+                cO[cQ] = cO[cQ] || {};
+                cO[cQ].executed = [];
+                cO.zaraz = { deferred: [], listeners: [] };
+                cO.zaraz.q = [];
+                cO.zaraz._f = function (cS) {
+                    return function () {
+                        var cT = Array.prototype.slice.call(arguments);
+                        cO.zaraz.q.push({ m: cS, a: cT })
                     }
-                }));
-                cW.referrerPolicy = "origin";
-                cW.src = "https://preview.colorlib.com/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIySmFja3NvbiUyMFRlbXBsYXRlJTIyJTJDJTIyeCUyMiUzQTAuMTY2NDUyNTIzMzI3MDA4ODglMkMlMjJ3JTIyJTNBMTUxMiUyQyUyMmglMjIlM0E5ODIlMkMlMjJqJTIyJTNBMjI0JTJDJTIyZSUyMiUzQTE1MTIlMkMlMjJsJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZwcmV2aWV3LmNvbG9ybGliLmNvbSUyRnRoZW1lJTJGamFja3NvbiUyRiUyMiUyQyUyMnIlMjIlM0ElMjIlMjIlMkMlMjJrJTIyJTNBMzAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBLTQyMCUyQyUyMnElMjIlM0ElNUIlN0IlMjJtJTIyJTNBJTIyc2V0JTIyJTJDJTIyYSUyMiUzQSU1QiUyMjAlMjIlMkMlMjJjb25maWclMjIlMkMlN0IlMjJzY29wZSUyMiUzQSUyMnBhZ2UlMjIlN0QlNUQlN0QlMkMlN0IlMjJtJTIyJTNBJTIyc2V0JTIyJTJDJTIyYSUyMiUzQSU1QiUyMjElMjIlMkMlMjJVQS0yMzU4MTU2OC0xMyUyMiUyQyU3QiUyMnNjb3BlJTIyJTNBJTIycGFnZSUyMiU3RCU1RCU3RCU1RCU3RA==";
-                cV.parentNode.insertBefore(cW, cV)
-            };
-            ["complete", "interactive"].includes(cP.readyState) ? zaraz.init() : cO.addEventListener("DOMContentLoaded", zaraz.init)
-        }(w, d, "zarazData", "script");
-    })(window, document);</script>
+                };
+                for (const cU of ["track", "set", "debug"]) cO.zaraz[cU] = cO.zaraz._f(cU);
+                cO.zaraz.init = () => {
+                    var cV = cP.getElementsByTagName(cR)[0], cW = cP.createElement(cR),
+                        cX = cP.getElementsByTagName("title")[0];
+                    cX && (cO[cQ].t = cP.getElementsByTagName("title")[0].text);
+                    cO[cQ].x = Math.random();
+                    cO[cQ].w = cO.screen.width;
+                    cO[cQ].h = cO.screen.height;
+                    cO[cQ].j = cO.innerHeight;
+                    cO[cQ].e = cO.innerWidth;
+                    cO[cQ].l = cO.location.href;
+                    cO[cQ].r = cP.referrer;
+                    cO[cQ].k = cO.screen.colorDepth;
+                    cO[cQ].n = cP.characterSet;
+                    cO[cQ].o = (new Date).getTimezoneOffset();
+                    if (cO.dataLayer) for (const da of Object.entries(Object.entries(dataLayer).reduce(((db, dc) => ({ ...db[1], ...dc[1] }))))) zaraz.set(da[0], da[1], { scope: "page" });
+                    cO[cQ].q = [];
+                    for (; cO.zaraz.q.length;) {
+                        const dd = cO.zaraz.q.shift();
+                        cO[cQ].q.push(dd)
+                    }
+                    cW.defer = !0;
+                    for (const de of [localStorage, sessionStorage]) Object.keys(de || {}).filter((dg => dg.startsWith("_zaraz_"))).forEach((df => {
+                        try {
+                            cO[cQ]["z_" + df.slice(7)] = JSON.parse(de.getItem(df))
+                        } catch {
+                            cO[cQ]["z_" + df.slice(7)] = de.getItem(df)
+                        }
+                    }));
+                    cW.referrerPolicy = "origin";
+                    cW.src = "https://preview.colorlib.com/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIySmFja3NvbiUyMFRlbXBsYXRlJTIyJTJDJTIyeCUyMiUzQTAuMTY2NDUyNTIzMzI3MDA4ODglMkMlMjJ3JTIyJTNBMTUxMiUyQyUyMmglMjIlM0E5ODIlMkMlMjJqJTIyJTNBMjI0JTJDJTIyZSUyMiUzQTE1MTIlMkMlMjJsJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZwcmV2aWV3LmNvbG9ybGliLmNvbSUyRnRoZW1lJTJGamFja3NvbiUyRiUyMiUyQyUyMnIlMjIlM0ElMjIlMjIlMkMlMjJrJTIyJTNBMzAlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBLTQyMCUyQyUyMnElMjIlM0ElNUIlN0IlMjJtJTIyJTNBJTIyc2V0JTIyJTJDJTIyYSUyMiUzQSU1QiUyMjAlMjIlMkMlMjJjb25maWclMjIlMkMlN0IlMjJzY29wZSUyMiUzQSUyMnBhZ2UlMjIlN0QlNUQlN0QlMkMlN0IlMjJtJTIyJTNBJTIyc2V0JTIyJTJDJTIyYSUyMiUzQSU1QiUyMjElMjIlMkMlMjJVQS0yMzU4MTU2OC0xMyUyMiUyQyU3QiUyMnNjb3BlJTIyJTNBJTIycGFnZSUyMiU3RCU1RCU3RCU1RCU3RA==";
+                    cV.parentNode.insertBefore(cW, cV)
+                };
+                ["complete", "interactive"].includes(cP.readyState) ? zaraz.init() : cO.addEventListener("DOMContentLoaded", zaraz.init)
+            }(w, d, "zarazData", "script");
+        })(window, document);</script>
 
     <!--      demo
     https://preview.colorlib.com/theme/jackson/
     -->
 </head>
-<body>
-<div id="colorlib-page">
-    <div class="container-wrap">
-        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
-           aria-expanded="false" aria-controls="navbar"><i></i></a>
-        <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-            <div class="text-center">
-                <div class="author-img" style="background-image: url(img/logo.png);"></div>
-                <h1 id="colorlib-logo"><a href="index.html">mCents</a></h1>
-                <span class="position">Tiếp cận tài chính phi tập trung</span>
-                <h5 class="col-md-12">| Giờ là năm 2023. Bạn không cần đến ngân hàng và nền tảng môi giới nữa.</h5>
-            </div>
-            <nav id="colorlib-main-menu" role="navigation" class="navbar">
-                <div id="navbar" class="collapse">
-                    <ul>
-                        <li class="active"><a href="#" data-nav-section="home">Trang Chủ</a></li>
-                        <li><a href="#" data-nav-section="new-cheese">Bàn Cờ Mới</a></li>
-                        <li><a href="#" data-nav-section="quandiemdautu"><i class="fa fa-hand-point-right faa-horizontal animated" aria-hidden="true"></i>Quan Điểm Đầu Tư</a></li>
-                        <li><a href="#" data-nav-section="support">Hỗ Trợ</a></li>
-                        <li><a href="#" data-nav-section="assets">Danh Mục Đầu Tư</a></li>
-                        <li><a href="#" data-nav-section="rules">Nguyên Tắc Đầu Tư</a></li>
-                        <li><a href="#" data-nav-section="services">Sản Phẩm</a></li>
-                        <li><a href="#" data-nav-section="blog">Blog</a></li>
-                        <li><a href="#" data-nav-section="contact">Liên Hệ</a></li>
-                        <li><a href="#" data-nav-section="policy">Chính Sách</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="colorlib-footer">
-                <p>
-                    <small>Cộng Đồng: </small>
-                    <a href="https://www.youtube.com/@mcents-bancomoi" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                </p>
-                <p>
-                    <small>
-                        mCents &copy; <script>document.write(new Date().getFullYear());</script>
-                    </small>
-                </p>
-            </div>
-        </aside>
-        <div id="colorlib-main">
-            <section id="colorlib-hero" class="js-fullheight" data-section="home">
-                <div class="flexslider js-fullheight">
-                    <ul class="slides">
-                        <li style="background-image: url(https://preview.colorlib.com/theme/jackson/images/img_bg_1.jpg);">
-                            <div class="overlay"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-8 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-                                        <div class="slider-text-inner js-fullheight">
-                                            <div class="desc">
-                                                <h1>Xin Chào! <br>Đây là <span class="color-name">mCents</span></h1>
-                                                <h2>
-                                                    Nơi chia sẽ về Tài Chính Phi Tập Trung
-<!--                                                    <span class="iconify" data-icon="eos-icons:blockchain"></span>-->
-                                                    <i class='bx bx-cube'></i>
-                                                </h2>
-                                                <p class="color-black">
-                                                    <a href="#" data-nav-section="new-cheese" class="btn btn-learn color-black">Cơ Hội Dành Cho Bạn
-                                                        <i class="fas fa-arrow-down"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(img/bancomoi.jpeg);">
-                            <div class="overlay"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-                                        <div class="slider-text-inner">
-                                            <div class="desc">
-                                                <h1 class="color-white">Bàn Cờ Mới</h1>
-                                                <h2 class="color-white">Nơi tạo ra tình thế tài chính mới</h2>
-                                                <p class="color-white">
-                                                    <a href="#" data-nav-section="new-cheese" class="btn btn-learn color-white">Chi Tiết
-                                                        <i class="fas fa-arrow-down"></i>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="colorlib-about" data-section="new-cheese">
-                <div class="colorlib-narrow-content">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                <div class="col-md-12">
-                                    <div class="about-desc">
-                                        <span class="heading-meta">Giới Thiệu</span>
-                                        <h2 class="colorlib-heading">Bàn Cờ Tài Chính</h2>
-                                        <p><strong>Cờ tỷ phú</strong> một trò chơi lúc nhỏ chúng ta từng chơi. khi mà
-                                            các bạn mới
-                                            bắt đầu chơi cờ tỷ phú thì đã có người
-                                            chơi một thời gian rồi, họ đã xây nhà
-                                            trên những cái ô vuông này thì các bạn
-                                            chỉ có thể đến và trả tiền mà thôi. Và
-                                            cuối cùng là người giàu sẽ mãi mãi giàu
-                                            hơn và giàu hơn chứ các bạn không có cơ hội để có thể thay đổi
-                                            cuộc sống của mình, để có thể trở thành
-                                            một trong những người thành công và có
-                                            tiền.</p>
-                                        <p>Mọi người sẽ từ từ cảm thấy như vậy.
-                                            Cho nên mọi người lúc nào cũng đi tìm
-                                            kiếm một cái gì đó để có thể là cải tiến.
-                                            Họ sẽ không muốn chơi bàn cờ này nữa mà
-                                            họ muốn có một bàn cờ khác để họ có thể
-                                            gầy dựng được tài sản của mình.</p>
-                                        <p>Đó là lý do tại sao mà những người giàu hồi xưa là họ
-                                            giàu tại vì họ bắt đầu là mở công xưởng
-                                            giống như <br> <a target="_blank"
-                                                             href="https://www.google.com/search?q=john+d+rockefeller+la+ai&sxsrf=APwXEdfiVC34njlkc180anYNJXuwpyn8_g%3A1681727102088&ei=fh49ZPz2BOq02roP0K6JgA4&ved=0ahUKEwj8rZ3U2bD-AhVqmlYBHVBXAuAQ4dUDCA8&uact=5&oq=john+d+rockefeller+la+ai&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQFhAeMggIABCKBRCGAzIICAAQigUQhgMyCAgAEIoFEIYDMggIABCKBRCGAzoKCAAQRxDWBBCwAzoFCCEQoAE6CAghEBYQHhAdSgQIQRgAUMUIWKkJYMQLaAJwAXgAgAHOAYgB5QKSAQUwLjEuMZgBAKABAcgBCMABAQ&sclient=gws-wiz-serp">
-                                                John D. Rockefeller</a>
-                                            một trong những tài phiệt liên quan tới dầu.
-                                            Hoặc <a target="_blank"
-                                                    href="https://www.google.com/search?q=andrew+carnegie+la+gi&sxsrf=APwXEddWcMoi2ijWq2ARrxrhJdC3NUCvwg%3A1681727438165&ei=zh89ZIjRCYqN2roP3o2o-AM&ved=0ahUKEwiI8L302rD-AhWKhlYBHd4GCj8Q4dUDCA8&uact=5&oq=andrew+carnegie+la+gi&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQFhAeMggIABCKBRCGAzoKCAAQRxDWBBCwAzoKCAAQigUQsAMQQzoNCAAQ5AIQ1gQQsAMYAToSCC4QigUQ1AIQyAMQsAMQQxgCOg8ILhCKBRDIAxCwAxBDGAI6BwgAEIoFEEM6CAgAEIAEEMsBOgUIABCABDoKCAAQgAQQFBCHAjoFCC4QgAQ6CAguEIAEENQCOgUIIRCgAToICCEQFhAeEB1KBAhBGABQvQZY1hpgqRxoBHABeACAAawBiAHNCZIBAzAuOJgBAKABAcgBE8ABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz-serp">
-                                                Andrew Carnegie</a>
-                                            với công xưởng <i>American Steel</i>, một công xưởng sản xuất thép.
-                                            Nếu như thế giới không thay đổi thì cuộc
-                                            chơi vẫn như vậy vẫn là bàn cờ tỷ phú này, thì những người
-                                            này và những thế hệ sau của họ vẫn mãi
-                                            mãi là những người giàu có nhất trên
-                                            thế giới.
-                                        </p>
-                                        <p>Rồi mọi thứ lại thay đổi, có rất nhiều chủ ngân hàng <a target="_blank" href="https://www.google.com/search?q=ph%E1%BB%91+wall&oq=ph%E1%BB%91+wall&aqs=chrome..69i57j46i512j0i512l5j69i61.3514j0j9&sourceid=chrome&ie=UTF-8">phố Wall</a>
-                                            là những người giàu trong thời gian mấy chục năm qua, đó là những người như <a href="https://www.google.com/search?q=JP+Morgan&tbm=isch&ved=2ahUKEwir3cKRq7L-AhWvpVYBHWG3ATwQ2-cCegQIABAA&oq=JP+Morgan&gs_lcp=CgNpbWcQAzIECCMQJzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoGCAAQCBAeOgcIABAYEIAEUOQIWI8KYIkMaABwAHgAgAF7iAHZApIBAzAuM5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=Jfo9ZOu2Jq_L2roP4e6G4AM&bih=858&biw=1745#imgrc=Pu96mGYiV3d0IM" target="_blank">J.P.Mogan</a>
-                                            trở thành
-                                            người giàu có và có quyền lực lãnh đạo
-                                            ngành ngân hàng và ngành ngân hàng lại
-                                            trở thành ngành mang đến lợi
-                                            nhuận dẫn đến nhiều người giàu có hơn. Và J.P.Mogan đã không
-                                            mở công ty sản xuất như những người như
-                                            là Andrew Carnegie hay là John D. Rockefeller mà lại đi
-                                            gầy dựng một cái bàn cờ khác để có thể
-                                            tạo ra sự nghiệp cho riêng mình. Các bạn có biết là hình ảnh trên bàn cờ tý phú
-                                            <a target="_blank" href="https://www.google.com/search?q=monopoly&hl=en&sxsrf=APwXEdfyIUJ2tEKOD1dMCaaL6edqyNYV7A:1682149058059&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjPlsLI_bz-AhWQ3zgGHWFmBAQQ_AUoAnoECAEQBA&biw=1374&bih=681&dpr=2.2">monopoly</a>
-                                            cũng chính là J.P.Mogan.
-                                        </p>
-                                        <p>Đến 1995, tiếp tục có một nhóm khác nổi lên, đó chính là nhóm người gầy dựng <i>Internet</i>.
-                                            Họ đã không muốn tiếp tục chơi bàn cờ này nữa và họ muốn tự gầy dựng ra một bàn cờ mới, một thế giới mới cho riêng của họ
-                                            , để họ có thể trở thành những người thành công, chứ nếu không họ sẽ mãi mãi là người đi sau.
-                                            Và <i>Internet</i> đã khiến cho nhiều thế hệ mới trở nên giàu có và mãi tới bây giờ, đó là những công ty như
-                                            <a href="https://www.google.com/search?q=Google+la+gi&oq=Google+la+gi&aqs=chrome..69i57j0i512j0i22i30l3j69i60l3.1685j0j7&sourceid=chrome&ie=UTF-8" target="_blank">Google</a>,
-                                             <a href="https://www.google.com/search?q=cong+ty+amazon+la+gi&sxsrf=APwXEddRPk4ALBCUHA3Z8x_RMsj4HuL7oA%3A1681784379493&ei=O_49ZKLZHZmyoAT1w76oBQ&ved=0ahUKEwji4pyEr7L-AhUZGYgKHfWhD1UQ4dUDCA8&uact=5&oq=cong+ty+amazon+la+gi&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQCBAHEB46CggAEEcQ1gQQsAM6BwgjELACECc6BwgAEA0QgAQ6BggAEB4QDUoECEEYAFD2EliRHGCbHWgBcAF4AIABkAGIAbAHkgEDMC43mAEAoAEByAEIwAEB&sclient=gws-wiz-serp" target="_blank">Amazon</a>...
-                                            những công ty có những tỷ phú đứng đầu hiện nay.
-                                        </p>
-                                        <p>Cũng tương tự như những người hiện bây giờ, nhất là những người trẻ thì lại muốn tìm hiểu một cái gì đó để có thể tự gầy dựng
-                                            một bàn cờ riêng cho mình, chứ không muốn tiếp tục chơi theo bàn cờ cũ. Và <span class="color-name">mCents</span> có lòng tin đó chính là
-                                            <a class="color-bitcoin" href="https://www.google.com/search?q=tien+dien+tu+la+gi&oq=tien+dien+tu&aqs=chrome.1.69i57j0i512j0i22i30l8.3084j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
-                                                tiền điện tử <i class="fab fa-bitcoin"></i>
-                                            </a>.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="hire">
-                                        <h2><span class="color-name">mCents</span> hy vọng mang lại nhiều thông tin giá trị cho các bạn.</h2>
-                                        <a href="#" class="btn-hire" data-nav-section="support">Hướng Dẫn Miễn Phí</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="colorlib-education" data-section="quandiemdautu">
-                <div class="colorlib-narrow-content">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                            <span class="heading-meta">quan điểm đầu tư của mcents</span>
-                            <h2 class="colorlib-heading animate-box">Thay Tư Duy Đổi Cuộc Đời</h2>
-                        </div>
+<body>
+    <div id="colorlib-page">
+        <div class="container-wrap">
+            <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar"><i></i></a>
+            <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+                <div class="text-center">
+                    <div class="author-img" style="background-image: url(img/logo.png);"></div>
+                    <h1 id="colorlib-logo"><a href="index.html">mCents</a></h1>
+                    <span class="position">Tiếp cận tài chính phi tập trung</span>
+                    <h5 class="col-md-12">| Giờ là năm 2023. Bạn không cần đến ngân hàng và nền tảng môi giới nữa.</h5>
+                </div>
+                <nav id="colorlib-main-menu" role="navigation" class="navbar">
+                    <div id="navbar" class="collapse">
+                        <ul>
+                            <li class="active"><a href="#" data-nav-section="home">Trang Chủ</a></li>
+                            <li><a href="#" data-nav-section="new-cheese">Bàn Cờ Mới</a></li>
+                            <li><a href="#" data-nav-section="quandiemdautu"><i
+                                        class="fa fa-hand-point-right faa-horizontal animated"
+                                        aria-hidden="true"></i>Quan Điểm Đầu Tư</a></li>
+                            <li><a href="#" data-nav-section="support">Hỗ Trợ</a></li>
+                            <li><a href="#" data-nav-section="assets">Danh Mục Đầu Tư</a></li>
+                            <li><a href="#" data-nav-section="rules">Nguyên Tắc Đầu Tư</a></li>
+                            <li><a href="#" data-nav-section="services">Sản Phẩm</a></li>
+                            <li><a href="#" data-nav-section="blog">Blog</a></li>
+                            <li><a href="#" data-nav-section="contact">Liên Hệ</a></li>
+                            <li><a href="#" data-nav-section="policy">Chính Sách</a></li>
+                        </ul>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                            <div class="fancy-collapse-panel">
-                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingOne">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    Tại Sao Phải Đầu Tư
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                            <div class="panel-body">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <p>
-                                                            Tiền thì cứ mãi in
-                                                            ra ở Hoa Kỳ và bất kỳ quốc gia nào cũng
-                                                            có thể làm tương tự như vậy. Tiền thì cứ mất giá trị
-                                                            theo thời gian cùng với phần trăm rất lớn
-                                                            chứ không phải là phần trăm lạm phát mà có thể quản lý được.
-                                                        </p>
-                                                        <p>
-                                                            Chúng ta có thể nhìn thấy được mỗi
-                                                            lần mà có chuyện thì giải pháp của Fed và phần lớn những
-                                                            ngân hàng Trung Ương vẫn là in tiền. Có Chiến tranh
-                                                            thì làm gì? <i>in tiền</i>, có dịch bệnh thì làm
-                                                            gì? <i>in tiền</i>, sau này có người ngoài hành tinh
-                                                            đến Trái Đất thì làm gì? <i>in tiền</i>.
-                                                        </p>
-                                                        <p>
-                                                            Nếu lưu trữ tiền quá nhiều tiền mặt trong một thời gian dài thì đó là một sự lựa chọn không hề tốt.
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <p>
-                                                            Chúng ta đều bỏ công sức để kiếm ra tiền. Hiểu đơn giản là các bạn dùng công sức tạo ra một loại tài sản khác để lưu trữ, tại vì công sức không thể lưu trữ được.
-                                                        </p>
-                                                        <p>
-                                                            Phần lớn chúng ta đi làm được trả bằng tiền pháp định như ở Hoa Kỳ là đô la hoặc ở Việt Nam là Việt Nam đồng.
-                                                            Nhưng tiền pháp định không phải là một loại tài sản lưu trữ giá trị dài hạn được. Cho nên dài hạn tài sản là cái mà các bạn cần.
-                                                        </p>
-                                                        <p>Đó là lý do tại sao <span class="color-name">mCents</span> có lòng tin là không chỉ riêng về
-                                                            <a class="color-bitcoin" href="https://accounts.binance.com/register?ref=209258462" target="_blank">
-                                                                tiền điện tử <i class="fab fa-bitcoin"></i>
-                                                            </a>, có thể kể đến cổ phiểu, bất động sản... Tất cả các
-                                                            loại tài sản tăng giá theo thời gian.
-                                                        </p>
-                                                    </div>
+                </nav>
+                <div class="colorlib-footer">
+                    <p>
+                        <small>Cộng Đồng: </small>
+                        <a href="https://www.youtube.com/@mcents-bancomoi" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </p>
+                    <p>
+                        <small>
+                            mCents &copy;
+                            <script>document.write(new Date().getFullYear());</script>
+                        </small>
+                    </p>
+                </div>
+            </aside>
+            <div id="colorlib-main">
+                <section id="colorlib-hero" class="js-fullheight" data-section="home">
+                    <div class="flexslider js-fullheight">
+                        <ul class="slides">
+                            <li
+                                style="background-image: url(https://preview.colorlib.com/theme/jackson/images/img_bg_1.jpg);">
+                                <div class="overlay"></div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div
+                                            class="col-md-8 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+                                            <div class="slider-text-inner js-fullheight">
+                                                <div class="desc">
+                                                    <h1>Xin Chào! <br>Đây là <span class="color-name">mCents</span></h1>
+                                                    <h2>
+                                                        Nơi chia sẽ về Tài Chính Phi Tập Trung
+                                                        <!--                                                    <span class="iconify" data-icon="eos-icons:blockchain"></span>-->
+                                                        <i class='bx bx-cube'></i>
+                                                    </h2>
+                                                    <p class="color-black">
+                                                        <a href="#" data-nav-section="new-cheese"
+                                                            class="btn btn-learn color-black">Cơ Hội Dành Cho Bạn
+                                                            <i class="fas fa-arrow-down"></i>
+                                                        </a>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingTwo">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Lý Do <span class="color-name">mCents</span> Chọn Đầu Tư Crypto
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                            <div class="panel-body">
-                                                <p>
-                                                    Có lẽ mọi người sẽ có những lý do khác nhau để đầu tư
-                                                    <a class="color-bitcoin" href="https://www.google.com/search?q=tien+dien+tu+la+gi&oq=tien+dien+tu&aqs=chrome.1.69i57j0i512j0i22i30l8.3084j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
-                                                        tiền điện tử <i class="fab fa-bitcoin"></i>
-                                                    </a>, ví dụ như Bitcoin là vàng của tiền điện tử, Ethereum là bạc, cryto nhanh chóng có siêu lợi nhuận, ít công sức... Mọi lý do đều không sao cả, quan trọng là các bạn có lòng tin của mình.
-                                                    Và đây là các lý do mà <span class="color-name">mCents</span> mỗi ngày tin tưởng mãnh liệt vào thị trường
-                                                    <a class="color-bitcoin" href="https://www.google.com/search?q=tien+dien+tu+la+gi&oq=tien+dien+tu&aqs=chrome.1.69i57j0i512j0i22i30l8.3084j0j7&sourceid=chrome&ie=UTF-8" target="_blank">
-                                                        tiền điện tử (cryto) <i class="fab fa-bitcoin"></i>
-                                                    </a>.
-                                                </p>
-                                                <ul>
-                                                    <li>Chu kỳ khủng hoảng kinh tế là cơ hội tốt để tích luỹ:
-                                                        <small>
-                                                            <dl>
-                                                                <dt>Khủng hoảng tín dụng, bất động sản năm 2008:</dt>
-                                                                <dd>- Chúng ta còn quá nhỏ.</dd>
-                                                                <dt>Dịch Bệnh năm 2020:</dt>
-                                                                <dd>- Mới đi làm, không có khả năng đầu tư nhiều.</dd>
-                                                                <dt>
-                                                                    Trước sự kiện
-                                                                    <a href="https://academy.binance.com/vi/halving" target="_blank">
-                                                                        Halving Bitcoin (năm 2024)
-                                                                    </a>, lạm phát năm 2023:
-                                                                </dt>
-                                                                <dd>- Nếu như lần này không nắm bắt, thì sẽ rất hối tiếc và sẽ không tha thứ cho bản thân mình.</dd>
-                                                            </dl>
-                                                        </small>
-                                                    </li>
-                                                    <li>Vốn hoá còn rất nhỏ và sẽ còn nhận sự đa dạng hoá đầu tư vào thị trường rất nhiều, cho nên cơ hội là còn rất lớn.</li>
-                                                    <li>Crypto là cơ hội dành cho tất cả mọi người:
-                                                        <small>
-                                                            <dl>
-                                                                <dt>Bất Động Sản, Chứng Khoán:</dt>
-                                                                <dd>- Cần vốn lớn, kiến thức luật đất đai, mối quan hệ...</dd>
-                                                                <dt>Vàng:</dt>
-                                                                <dd>- Khó giao dịch, khó di chuyển.</dd>
-                                                                <dt>Gửi Ngân Hàng:</dt>
-                                                                <dd>- Phụ thuộc vào bên thứ ba.</dd>
-                                                            </dl>
-                                                        </small>
-                                                    </li>
-                                                    <li>Đặc điểm của Crypto so với tiền pháp định.
-                                                        <small>
-                                                            <ul>
-                                                                <li>Không thể đảo ngược. Một khi đã gửi đi rồi thì không thể lấy lại.</li>
-                                                                <li>Ai cũng có thể tạo ví và gửi tiền mà không cần chứng minh quốc tịch, số tuổi, giới tính, màu da.</li>
-                                                                <li>Tốc độ xử lý giao dịch nhanh và an toàn. Nhanh ở đây là quá trình một giao dịch thật sự hoàn thành và đổi chủ.</li>
-                                                                <li>Bạn không cần phải xin phép bất cứ ai để có thể di chuyển tiền của bạn.</li>
-                                                                <li>Nguồn cung minh bạch rõ ràng. Điển hình như Bitcoin đã ấn định nguồn cung tối đa 21 triệu đồng và tỷ lệ lạm phát có thể biết trước trong tương lai.</li>
-                                                                <li>
-                                                                    Để mà các đồng tiền crypto có được những đặc tính này thì chúng cần có một đường ray đặc biệt để chạy trên đó. Và đường ray đó được gọi là
-                                                                    <a href="https://aws.amazon.com/vi/what-is/blockchain/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc" target="_blank">
-                                                                        blockchain
-                                                                    </a>.
-                                                                </li>
-                                                                <li>
-                                                                    Đằng sau cryto là những công nghệ, nghiên cứu tân tiến tạo nên cuộc cách mạng siêu to khổng lồ. Ví dụ như công trình Bitcoin<i class="fab fa-bitcoin"></i> được
-                                                                    giới thiệu trong
-                                                                    <a href="https://bitcoin.org/files/bitcoin-paper/bitcoin_vi.pdf" target="_blank">
-                                                                        Whitepaper phiên bản Tiếng Việt
-                                                                    </a>. Và còn nữa những công nghệ khác ví dụ như
-                                                                    <a href="https://academy.binance.com/vi/articles/what-are-smart-contracts" target="_blank">
-                                                                        Hợp đồng thông minh
-                                                                    </a> từ đó mở ra một thế giới phi tập trung vô tận.
-                                                                </li>
-                                                            </ul>
-                                                        </small>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingThree">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Cách Đầu Tư Của <span class="color-name">mCents</span>
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                            <div class="panel-body">
-                                                <p>Khi đầu tư bất kì thị trường nào đều không tránh khỏi sự căng thẳng
-                                                    , khó khăn khi đưa ra các quyết định.
-                                                    Đối với <span class="color-name">mCents</span>
-                                                    đầu tư phải thư thái, nhàng hạ như vậy mới đầu tư. Vì nếu chúng ta đầu tư để nhận lại những cảm xúc tiêu cực
-                                                    ảnh hưởng đến cuộc sống, gia đình, thời gian làm những việc mình thích, đặc biệt <span class="color-name">mCents</span>
-                                                    là những người đề cao và yêu thích sự tự do. Nhưng làm sao vẫn có thể có lời. Sau đây là cách mà <span class="color-name">mCents</span>
-                                                    đã áp dụng và có lời. Đéo có dẫn chứng gì hết. Bố thích. Ko tin cút!!!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingFour">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Diploma in Information Technology
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                            <div class="panel-body">
-                                                <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingFive">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                            <div class="panel-body">
-                                                <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                                </div>
+                            </li>
+                            <li style="background-image: url(img/bancomoi.jpeg);">
+                                <div class="overlay"></div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div
+                                            class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+                                            <div class="slider-text-inner">
+                                                <div class="desc">
+                                                    <h1 class="color-white">Bàn Cờ Mới</h1>
+                                                    <h2 class="color-white">Nơi tạo ra tình thế tài chính mới</h2>
+                                                    <p class="color-white">
+                                                        <a href="#" data-nav-section="new-cheese"
+                                                            class="btn btn-learn color-white">Chi Tiết
+                                                            <i class="fas fa-arrow-down"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-            </section>
-
-            <section class="colorlib-about" data-section="support">
-                <div class="colorlib-narrow-content">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                <div class="col-md-12">
-                                    <span class="heading-meta">Hỗ Trợ</span>
-                                    <h2 class="colorlib-heading">Hướng Dẫn MIỄN PHÍ</h2>
-                                    <p>
-                                        <span class="fa-stack">
-                                            <i class="fas fa-circle fa-stack-2x color-2"></i>
-                                            <i class="fas fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
-                                        </span> Tham gia vào các sàn giao dịch crypto hay dịch vụ crypto có nhiều nguy hiểm và rủi ro cho nên không khuyến khích tham gia nếu bạn không thể chấp nhận nguy hiểm và rủi ro, nhất là khi tham gia các sàn giao dịch margin.
-                                    </p>
-                                    <p>
-                                        <span class="fa-stack">
-                                            <i class="fas fa-circle fa-stack-2x color-2"></i>
-                                            <i class="fas fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
-                                        </span> Tất cả chỉ vì mục đích thông tin và không được xem là lời khuyên đầu tư. Bạn nên tự tìm hiểu trước khi đưa ra quyết định đầu tư. <span class="color-name">mCents</span> không phải là đơn vị dịch vụ tư vấn tài chính và sẽ không chịu bất kỳ trách nhiệm nào liên quan đến việc đầu tư của bạn.
-                                    </p>
-                                    <p>
-                                        <span class="fa-stack">
-                                            <i class="fas fa-circle fa-stack-2x color-2"></i>
-                                            <i class="fas fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
-                                        </span> <span class="color-name">mCents</span> sẽ không bao giờ kêu gọi các bạn đầu tư vào bất cứ dự án nào hay dịch vụ nào. <span class="color-name">mCents</span> cũng sẽ không bao giờ chủ động nhắn tin cho bạn trước. <span class="color-name">mCents</span> chỉ trả lời tin nhắn.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-                                    <div class="services color-3">
-                                        <span class="icon2">
-                                            <i class="fab fa-bitcoin"></i>
-                                        </span>
-                                        <h3>Tiền Điện Tử</h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="services color-1">
-                                        <span class="icon2">
-                                            <i class="fas fa-chart-line"></i>
-                                        </span>
-                                        <h3>Chứng Khoán</h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-                                    <div class="services color-2">
-                                        <span class="icon2">
-                                            <i class="fas fa-home"></i>
-                                        </span>
-                                        <h3>Bất Động Sản</h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-                                    <div class="services color-4">
-                                        <span class="icon2">
-                                            <i class="fas fa-file-contract"></i>
-                                        </span>
-                                        <h3>Tài Chính Cá Nhân</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="colorlib-counter" class="colorlib-counters"
-                     style="background-image: url(https://preview.colorlib.com/theme/jackson/images/cover_bg_1.jpg);"
-                     data-stellar-background-ratio="0.5">
-                    <div class="overlay"></div>
+                </section>
+                <section class="colorlib-about" data-section="new-cheese">
                     <div class="colorlib-narrow-content">
-                        <div class="row"></div>
                         <div class="row">
-                            <div class="col-md-3 text-center animate-box">
-                            <span class="colorlib-counter js-counter" data-from="0" data-to="46" data-speed="5000"
-                                  data-refresh-interval="50"></span>
-                                <span class="colorlib-counter-label">Dịch Vụ</span>
-                            </div>
-                            <div class="col-md-3 text-center animate-box">
-                            <span class="colorlib-counter js-counter" data-from="0" data-to="4" data-speed="5000"
-                                  data-refresh-interval="50"></span>
-                                <span class="colorlib-counter-label">Dự Án</span>
-                            </div>
-                            <div class="col-md-3 text-center animate-box">
-                            <span class="colorlib-counter js-counter" data-from="0" data-to="12" data-speed="5000"
-                                  data-refresh-interval="50"></span>
-                                <span class="colorlib-counter-label">Khách Hàng</span>
-                            </div>
-                            <div class="col-md-3 text-center animate-box">
-                            <span class="colorlib-counter js-counter" data-from="0" data-to="3" data-speed="5000"
-                                  data-refresh-interval="50"></span>
-                                <span class="colorlib-counter-label">Đối Tác</span>
+                            <div class="col-md-12">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="col-md-12">
+                                        <div class="about-desc">
+                                            <span class="heading-meta">Giới Thiệu</span>
+                                            <h2 class="colorlib-heading">Bàn Cờ Tài Chính</h2>
+                                            <p><strong>Cờ tỷ phú</strong> một trò chơi lúc nhỏ chúng ta từng chơi. khi
+                                                mà
+                                                các bạn mới
+                                                bắt đầu chơi cờ tỷ phú thì đã có người
+                                                chơi một thời gian rồi, họ đã xây nhà
+                                                trên những cái ô vuông này thì các bạn
+                                                chỉ có thể đến và trả tiền mà thôi. Và
+                                                cuối cùng là người giàu sẽ mãi mãi giàu
+                                                hơn và giàu hơn chứ các bạn không có cơ hội để có thể thay đổi
+                                                cuộc sống của mình, để có thể trở thành
+                                                một trong những người thành công và có
+                                                tiền.</p>
+                                            <p>Mọi người sẽ từ từ cảm thấy như vậy.
+                                                Cho nên mọi người lúc nào cũng đi tìm
+                                                kiếm một cái gì đó để có thể là cải tiến.
+                                                Họ sẽ không muốn chơi bàn cờ này nữa mà
+                                                họ muốn có một bàn cờ khác để họ có thể
+                                                gầy dựng được tài sản của mình.</p>
+                                            <p>Đó là lý do tại sao mà những người giàu hồi xưa là họ
+                                                giàu tại vì họ bắt đầu là mở công xưởng
+                                                giống như <br> <a target="_blank"
+                                                    href="https://www.google.com/search?q=john+d+rockefeller+la+ai&sxsrf=APwXEdfiVC34njlkc180anYNJXuwpyn8_g%3A1681727102088&ei=fh49ZPz2BOq02roP0K6JgA4&ved=0ahUKEwj8rZ3U2bD-AhVqmlYBHVBXAuAQ4dUDCA8&uact=5&oq=john+d+rockefeller+la+ai&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQFhAeMggIABCKBRCGAzIICAAQigUQhgMyCAgAEIoFEIYDMggIABCKBRCGAzoKCAAQRxDWBBCwAzoFCCEQoAE6CAghEBYQHhAdSgQIQRgAUMUIWKkJYMQLaAJwAXgAgAHOAYgB5QKSAQUwLjEuMZgBAKABAcgBCMABAQ&sclient=gws-wiz-serp">
+                                                    John D. Rockefeller</a>
+                                                một trong những tài phiệt liên quan tới dầu.
+                                                Hoặc <a target="_blank"
+                                                    href="https://www.google.com/search?q=andrew+carnegie+la+gi&sxsrf=APwXEddWcMoi2ijWq2ARrxrhJdC3NUCvwg%3A1681727438165&ei=zh89ZIjRCYqN2roP3o2o-AM&ved=0ahUKEwiI8L302rD-AhWKhlYBHd4GCj8Q4dUDCA8&uact=5&oq=andrew+carnegie+la+gi&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQFhAeMggIABCKBRCGAzoKCAAQRxDWBBCwAzoKCAAQigUQsAMQQzoNCAAQ5AIQ1gQQsAMYAToSCC4QigUQ1AIQyAMQsAMQQxgCOg8ILhCKBRDIAxCwAxBDGAI6BwgAEIoFEEM6CAgAEIAEEMsBOgUIABCABDoKCAAQgAQQFBCHAjoFCC4QgAQ6CAguEIAEENQCOgUIIRCgAToICCEQFhAeEB1KBAhBGABQvQZY1hpgqRxoBHABeACAAawBiAHNCZIBAzAuOJgBAKABAcgBE8ABAdoBBggBEAEYCdoBBggCEAEYCA&sclient=gws-wiz-serp">
+                                                    Andrew Carnegie</a>
+                                                với công xưởng <i>American Steel</i>, một công xưởng sản xuất thép.
+                                                Nếu như thế giới không thay đổi thì cuộc
+                                                chơi vẫn như vậy vẫn là bàn cờ tỷ phú này, thì những người
+                                                này và những thế hệ sau của họ vẫn mãi
+                                                mãi là những người giàu có nhất trên
+                                                thế giới.
+                                            </p>
+                                            <p>Rồi mọi thứ lại thay đổi, có rất nhiều chủ ngân hàng <a target="_blank"
+                                                    href="https://www.google.com/search?q=ph%E1%BB%91+wall&oq=ph%E1%BB%91+wall&aqs=chrome..69i57j46i512j0i512l5j69i61.3514j0j9&sourceid=chrome&ie=UTF-8">phố
+                                                    Wall</a>
+                                                là những người giàu trong thời gian mấy chục năm qua, đó là những người
+                                                như <a
+                                                    href="https://www.google.com/search?q=JP+Morgan&tbm=isch&ved=2ahUKEwir3cKRq7L-AhWvpVYBHWG3ATwQ2-cCegQIABAA&oq=JP+Morgan&gs_lcp=CgNpbWcQAzIECCMQJzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoGCAAQCBAeOgcIABAYEIAEUOQIWI8KYIkMaABwAHgAgAF7iAHZApIBAzAuM5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=Jfo9ZOu2Jq_L2roP4e6G4AM&bih=858&biw=1745#imgrc=Pu96mGYiV3d0IM"
+                                                    target="_blank">J.P.Mogan</a>
+                                                trở thành
+                                                người giàu có và có quyền lực lãnh đạo
+                                                ngành ngân hàng và ngành ngân hàng lại
+                                                trở thành ngành mang đến lợi
+                                                nhuận dẫn đến nhiều người giàu có hơn. Và J.P.Mogan đã không
+                                                mở công ty sản xuất như những người như
+                                                là Andrew Carnegie hay là John D. Rockefeller mà lại đi
+                                                gầy dựng một cái bàn cờ khác để có thể
+                                                tạo ra sự nghiệp cho riêng mình. Các bạn có biết là hình ảnh trên bàn cờ
+                                                tý phú
+                                                <a target="_blank"
+                                                    href="https://www.google.com/search?q=monopoly&hl=en&sxsrf=APwXEdfyIUJ2tEKOD1dMCaaL6edqyNYV7A:1682149058059&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjPlsLI_bz-AhWQ3zgGHWFmBAQQ_AUoAnoECAEQBA&biw=1374&bih=681&dpr=2.2">monopoly</a>
+                                                cũng chính là J.P.Mogan.
+                                            </p>
+                                            <p>Đến 1995, tiếp tục có một nhóm khác nổi lên, đó chính là nhóm người gầy
+                                                dựng <i>Internet</i>.
+                                                Họ đã không muốn tiếp tục chơi bàn cờ này nữa và họ muốn tự gầy dựng ra
+                                                một bàn cờ mới, một thế giới mới cho riêng của họ
+                                                , để họ có thể trở thành những người thành công, chứ nếu không họ sẽ mãi
+                                                mãi là người đi sau.
+                                                Và <i>Internet</i> đã khiến cho nhiều thế hệ mới trở nên giàu có và mãi
+                                                tới bây giờ, đó là những công ty như
+                                                <a href="https://www.google.com/search?q=Google+la+gi&oq=Google+la+gi&aqs=chrome..69i57j0i512j0i22i30l3j69i60l3.1685j0j7&sourceid=chrome&ie=UTF-8"
+                                                    target="_blank">Google</a>,
+                                                <a href="https://www.google.com/search?q=cong+ty+amazon+la+gi&sxsrf=APwXEddRPk4ALBCUHA3Z8x_RMsj4HuL7oA%3A1681784379493&ei=O_49ZKLZHZmyoAT1w76oBQ&ved=0ahUKEwji4pyEr7L-AhUZGYgKHfWhD1UQ4dUDCA8&uact=5&oq=cong+ty+amazon+la+gi&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQCBAHEB46CggAEEcQ1gQQsAM6BwgjELACECc6BwgAEA0QgAQ6BggAEB4QDUoECEEYAFD2EliRHGCbHWgBcAF4AIABkAGIAbAHkgEDMC43mAEAoAEByAEIwAEB&sclient=gws-wiz-serp"
+                                                    target="_blank">Amazon</a>...
+                                                những công ty có những tỷ phú đứng đầu hiện nay.
+                                            </p>
+                                            <p>Cũng tương tự như những người hiện bây giờ, nhất là những người trẻ thì
+                                                lại muốn tìm hiểu một cái gì đó để có thể tự gầy dựng
+                                                một bàn cờ riêng cho mình, chứ không muốn tiếp tục chơi theo bàn cờ cũ.
+                                                Và <span class="color-name">mCents</span> có lòng tin đó chính là
+                                                <a class="color-bitcoin"
+                                                    href="https://www.google.com/search?q=tien+dien+tu+la+gi&oq=tien+dien+tu&aqs=chrome.1.69i57j0i512j0i22i30l8.3084j0j7&sourceid=chrome&ie=UTF-8"
+                                                    target="_blank">
+                                                    tiền điện tử <i class="fab fa-bitcoin"></i>
+                                                </a>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                        <div class="hire">
+                                            <h2><span class="color-name">mCents</span> hy vọng mang lại nhiều thông tin
+                                                giá trị cho các bạn.</h2>
+                                            <a href="#" class="btn-hire" data-nav-section="support">Hướng Dẫn Miễn
+                                                Phí</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="colorlib-skills" data-section="assets">
-                <div class="colorlib-narrow-content">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-                             data-animate-effect="fadeInLeft">
-                            <span class="heading-meta">Danh Mục Đầu Tư</span>
-                            <h2 class="colorlib-heading animate-box">Cập nhật:
-                                <script>
-                                    // Lấy đối tượng Date hiện tại
-                                    var currentDate = new Date();
+                </section>
 
-                                    // Lấy ngày, tháng và năm hiện tại
-                                    var day = currentDate.getDate();
-                                    var month = currentDate.getMonth() + 1; // Lưu ý tháng bắt đầu từ 0
-                                    var year = currentDate.getFullYear();
+                <section class="colorlib-education" data-section="quandiemdautu">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                                data-animate-effect="fadeInLeft">
+                                <span class="heading-meta">quan điểm đầu tư của mcents</span>
+                                <h2 class="colorlib-heading animate-box">Thay Tư Duy Đổi Cuộc Đời</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <div class="fancy-collapse-panel">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion"
+                                                        href="#collapseOne" aria-expanded="true"
+                                                        aria-controls="collapseOne">
+                                                        Tại Sao Phải Đầu Tư
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                                aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p>
+                                                                Tiền thì cứ mãi in
+                                                                ra ở Hoa Kỳ và bất kỳ quốc gia nào cũng
+                                                                có thể làm tương tự như vậy. Tiền thì cứ mất giá trị
+                                                                theo thời gian cùng với phần trăm rất lớn
+                                                                chứ không phải là phần trăm lạm phát mà có thể quản lý
+                                                                được.
+                                                            </p>
+                                                            <p>
+                                                                Chúng ta có thể nhìn thấy được mỗi
+                                                                lần mà có chuyện thì giải pháp của Fed và phần lớn những
+                                                                ngân hàng Trung Ương vẫn là in tiền. Có Chiến tranh
+                                                                thì làm gì? <i>in tiền</i>, có dịch bệnh thì làm
+                                                                gì? <i>in tiền</i>, sau này có người ngoài hành tinh
+                                                                đến Trái Đất thì làm gì? <i>in tiền</i>.
+                                                            </p>
+                                                            <p>
+                                                                Nếu lưu trữ tiền quá nhiều tiền mặt trong một thời gian
+                                                                dài thì đó là một sự lựa chọn không hề tốt.
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p>
+                                                                Chúng ta đều bỏ công sức để kiếm ra tiền. Hiểu đơn giản
+                                                                là các bạn dùng công sức tạo ra một loại tài sản khác để
+                                                                lưu trữ, tại vì công sức không thể lưu trữ được.
+                                                            </p>
+                                                            <p>
+                                                                Phần lớn chúng ta đi làm được trả bằng tiền pháp định
+                                                                như ở Hoa Kỳ là đô la hoặc ở Việt Nam là Việt Nam đồng.
+                                                                Nhưng tiền pháp định không phải là một loại tài sản lưu
+                                                                trữ giá trị dài hạn được. Cho nên dài hạn tài sản là cái
+                                                                mà các bạn cần.
+                                                            </p>
+                                                            <p>Đó là lý do tại sao <span
+                                                                    class="color-name">mCents</span> có lòng tin là
+                                                                không chỉ riêng về
+                                                                <a class="color-bitcoin"
+                                                                    href="https://accounts.binance.com/register?ref=209258462"
+                                                                    target="_blank">
+                                                                    tiền điện tử <i class="fab fa-bitcoin"></i>
+                                                                </a>, có thể kể đến cổ phiểu, bất động sản... Tất cả các
+                                                                loại tài sản tăng giá theo thời gian.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                                        href="#collapseTwo" aria-expanded="false"
+                                                        aria-controls="collapseTwo">
+                                                        Lý Do <span class="color-name">mCents</span> Chọn Đầu Tư Crypto
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                                aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Có lẽ mọi người sẽ có những lý do khác nhau để đầu tư
+                                                        <a class="color-bitcoin"
+                                                            href="https://www.google.com/search?q=tien+dien+tu+la+gi&oq=tien+dien+tu&aqs=chrome.1.69i57j0i512j0i22i30l8.3084j0j7&sourceid=chrome&ie=UTF-8"
+                                                            target="_blank">
+                                                            tiền điện tử <i class="fab fa-bitcoin"></i>
+                                                        </a>, ví dụ như Bitcoin là vàng của tiền điện tử, Ethereum là
+                                                        bạc, cryto nhanh chóng có siêu lợi nhuận, ít công sức... Mọi lý
+                                                        do đều không sao cả, quan trọng là các bạn có lòng tin của mình.
+                                                        Và đây là các lý do mà <span class="color-name">mCents</span>
+                                                        mỗi ngày tin tưởng mãnh liệt vào thị trường
+                                                        <a class="color-bitcoin"
+                                                            href="https://www.google.com/search?q=tien+dien+tu+la+gi&oq=tien+dien+tu&aqs=chrome.1.69i57j0i512j0i22i30l8.3084j0j7&sourceid=chrome&ie=UTF-8"
+                                                            target="_blank">
+                                                            tiền điện tử (cryto) <i class="fab fa-bitcoin"></i>
+                                                        </a>.
+                                                    </p>
+                                                    <ul>
+                                                        <li>Chu kỳ khủng hoảng kinh tế là cơ hội tốt để tích luỹ:
+                                                            <small>
+                                                                <dl>
+                                                                    <dt>Khủng hoảng tín dụng, bất động sản năm 2008:
+                                                                    </dt>
+                                                                    <dd>- Chúng ta còn quá nhỏ.</dd>
+                                                                    <dt>Dịch Bệnh năm 2020:</dt>
+                                                                    <dd>- Mới đi làm, không có khả năng đầu tư nhiều.
+                                                                    </dd>
+                                                                    <dt>
+                                                                        Trước sự kiện
+                                                                        <a href="https://academy.binance.com/vi/halving"
+                                                                            target="_blank">
+                                                                            Halving Bitcoin (năm 2024)
+                                                                        </a>, lạm phát năm 2023:
+                                                                    </dt>
+                                                                    <dd>- Nếu như lần này không nắm bắt, thì sẽ rất hối
+                                                                        tiếc và sẽ không tha thứ cho bản thân mình.</dd>
+                                                                </dl>
+                                                            </small>
+                                                        </li>
+                                                        <li>Vốn hoá còn rất nhỏ và sẽ còn nhận sự đa dạng hoá đầu tư vào
+                                                            thị trường rất nhiều, cho nên cơ hội là còn rất lớn.</li>
+                                                        <li>Crypto là cơ hội dành cho tất cả mọi người:
+                                                            <small>
+                                                                <dl>
+                                                                    <dt>Bất Động Sản, Chứng Khoán:</dt>
+                                                                    <dd>- Cần vốn lớn, kiến thức luật đất đai, mối quan
+                                                                        hệ...</dd>
+                                                                    <dt>Vàng:</dt>
+                                                                    <dd>- Khó giao dịch, khó di chuyển.</dd>
+                                                                    <dt>Gửi Ngân Hàng:</dt>
+                                                                    <dd>- Phụ thuộc vào bên thứ ba.</dd>
+                                                                </dl>
+                                                            </small>
+                                                        </li>
+                                                        <li>Đặc điểm của Crypto so với tiền pháp định.
+                                                            <small>
+                                                                <ul>
+                                                                    <li>Không thể đảo ngược. Một khi đã gửi đi rồi thì
+                                                                        không thể lấy lại.</li>
+                                                                    <li>Ai cũng có thể tạo ví và gửi tiền mà không cần
+                                                                        chứng minh quốc tịch, số tuổi, giới tính, màu
+                                                                        da.</li>
+                                                                    <li>Tốc độ xử lý giao dịch nhanh và an toàn. Nhanh ở
+                                                                        đây là quá trình một giao dịch thật sự hoàn
+                                                                        thành và đổi chủ.</li>
+                                                                    <li>Bạn không cần phải xin phép bất cứ ai để có thể
+                                                                        di chuyển tiền của bạn.</li>
+                                                                    <li>Nguồn cung minh bạch rõ ràng. Điển hình như
+                                                                        Bitcoin đã ấn định nguồn cung tối đa 21 triệu
+                                                                        đồng và tỷ lệ lạm phát có thể biết trước trong
+                                                                        tương lai.</li>
+                                                                    <li>
+                                                                        Để mà các đồng tiền crypto có được những đặc
+                                                                        tính này thì chúng cần có một đường ray đặc biệt
+                                                                        để chạy trên đó. Và đường ray đó được gọi là
+                                                                        <a href="https://aws.amazon.com/vi/what-is/blockchain/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc"
+                                                                            target="_blank">
+                                                                            blockchain
+                                                                        </a>.
+                                                                    </li>
+                                                                    <li>
+                                                                        Đằng sau cryto là những công nghệ, nghiên cứu
+                                                                        tân tiến tạo nên cuộc cách mạng siêu to khổng
+                                                                        lồ. Ví dụ như công trình Bitcoin<i
+                                                                            class="fab fa-bitcoin"></i> được
+                                                                        giới thiệu trong
+                                                                        <a href="https://bitcoin.org/files/bitcoin-paper/bitcoin_vi.pdf"
+                                                                            target="_blank">
+                                                                            Whitepaper phiên bản Tiếng Việt
+                                                                        </a>. Và còn nữa những công nghệ khác ví dụ như
+                                                                        <a href="https://academy.binance.com/vi/articles/what-are-smart-contracts"
+                                                                            target="_blank">
+                                                                            Hợp đồng thông minh
+                                                                        </a> từ đó mở ra một thế giới phi tập trung vô
+                                                                        tận.
+                                                                    </li>
+                                                                </ul>
+                                                            </small>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                                        href="#collapseThree" aria-expanded="false"
+                                                        aria-controls="collapseThree">
+                                                        Cách Đầu Tư Của <span class="color-name">mCents</span>
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                                aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    <p>Khi đầu tư bất kì thị trường nào đều không tránh khỏi sự căng
+                                                        thẳng
+                                                        , khó khăn khi đưa ra các quyết định.
+                                                        Đối với <span class="color-name">mCents</span>
+                                                        đầu tư phải thư thái, nhàng hạ như vậy mới đầu tư. Vì nếu chúng
+                                                        ta đầu tư để nhận lại những cảm xúc tiêu cực
+                                                        ảnh hưởng đến cuộc sống, gia đình, thời gian làm những việc mình
+                                                        thích, đặc biệt <span class="color-name">mCents</span>
+                                                        là những người đề cao và yêu thích sự tự do. Nhưng làm sao vẫn
+                                                        có thể có lời. Sau đây là cách mà <span
+                                                            class="color-name">mCents</span>
+                                                        đã áp dụng và có lời.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingFour">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                                        href="#collapseFour" aria-expanded="false"
+                                                        aria-controls="collapseFour">Diploma in Information Technology
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                                                aria-labelledby="headingFour">
+                                                <div class="panel-body">
+                                                    <p>Far far away, behind the word <strong>mountains</strong>, far
+                                                        from the countries Vokalia and Consonantia, there live the blind
+                                                        texts. Separated they live in Bookmarksgrove right at the coast
+                                                        of the Semantics, a large language ocean.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingFive">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                                        href="#collapseFive" aria-expanded="false"
+                                                        aria-controls="collapseFive">High School Secondary Education
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+                                                aria-labelledby="headingFive">
+                                                <div class="panel-body">
+                                                    <p>Far far away, behind the word <strong>mountains</strong>, far
+                                                        from the countries Vokalia and Consonantia, there live the blind
+                                                        texts. Separated they live in Bookmarksgrove right at the coast
+                                                        of the Semantics, a large language ocean.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                                    // In ra ngày tháng năm hiện tại
-                                    document.write(day + "/" + month + "/" + year);
+                <section class="colorlib-about" data-section="support">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="col-md-12">
+                                        <span class="heading-meta">Hỗ Trợ</span>
+                                        <h2 class="colorlib-heading">Hướng Dẫn MIỄN PHÍ</h2>
+                                        <p>
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x color-2"></i>
+                                                <i class="fas fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
+                                            </span> Tham gia vào các sàn giao dịch crypto hay dịch vụ crypto có nhiều
+                                            nguy hiểm và rủi ro cho nên không khuyến khích tham gia nếu bạn không thể
+                                            chấp nhận nguy hiểm và rủi ro, nhất là khi tham gia các sàn giao dịch
+                                            margin.
+                                        </p>
+                                        <p>
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x color-2"></i>
+                                                <i class="fas fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
+                                            </span> Tất cả chỉ vì mục đích thông tin và không được xem là lời khuyên đầu
+                                            tư. Bạn nên tự tìm hiểu trước khi đưa ra quyết định đầu tư. <span
+                                                class="color-name">mCents</span> không phải là đơn vị dịch vụ tư vấn tài
+                                            chính và sẽ không chịu bất kỳ trách nhiệm nào liên quan đến việc đầu tư của
+                                            bạn.
+                                        </p>
+                                        <p>
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x color-2"></i>
+                                                <i class="fas fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
+                                            </span> <span class="color-name">mCents</span> sẽ không bao giờ kêu gọi các
+                                            bạn đầu tư vào bất cứ dự án nào hay dịch vụ nào. <span
+                                                class="color-name">mCents</span> cũng sẽ không bao giờ chủ động nhắn tin
+                                            cho bạn trước. <span class="color-name">mCents</span> chỉ trả lời tin nhắn.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+                                        <div class="services color-3">
+                                            <span class="icon2">
+                                                <i class="fab fa-bitcoin"></i>
+                                            </span>
+                                            <h3>Tiền Điện Tử</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+                                        <div class="services color-1">
+                                            <span class="icon2">
+                                                <i class="fas fa-chart-line"></i>
+                                            </span>
+                                            <h3>Chứng Khoán</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+                                        <div class="services color-2">
+                                            <span class="icon2">
+                                                <i class="fas fa-home"></i>
+                                            </span>
+                                            <h3>Bất Động Sản</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+                                        <div class="services color-4">
+                                            <span class="icon2">
+                                                <i class="fas fa-file-contract"></i>
+                                            </span>
+                                            <h3>Tài Chính Cá Nhân</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="colorlib-counter" class="colorlib-counters"
+                        style="background-image: url(https://preview.colorlib.com/theme/jackson/images/cover_bg_1.jpg);"
+                        data-stellar-background-ratio="0.5">
+                        <div class="overlay"></div>
+                        <div class="colorlib-narrow-content">
+                            <div class="row"></div>
+                            <div class="row">
+                                <div class="col-md-3 text-center animate-box">
+                                    <span class="colorlib-counter js-counter" data-from="0" data-to="46"
+                                        data-speed="5000" data-refresh-interval="50"></span>
+                                    <span class="colorlib-counter-label">Dịch Vụ</span>
+                                </div>
+                                <div class="col-md-3 text-center animate-box">
+                                    <span class="colorlib-counter js-counter" data-from="0" data-to="4"
+                                        data-speed="5000" data-refresh-interval="50"></span>
+                                    <span class="colorlib-counter-label">Dự Án</span>
+                                </div>
+                                <div class="col-md-3 text-center animate-box">
+                                    <span class="colorlib-counter js-counter" data-from="0" data-to="12"
+                                        data-speed="5000" data-refresh-interval="50"></span>
+                                    <span class="colorlib-counter-label">Khách Hàng</span>
+                                </div>
+                                <div class="col-md-3 text-center animate-box">
+                                    <span class="colorlib-counter js-counter" data-from="0" data-to="3"
+                                        data-speed="5000" data-refresh-interval="50"></span>
+                                    <span class="colorlib-counter-label">Đối Tác</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="colorlib-skills" data-section="assets">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                                data-animate-effect="fadeInLeft">
+                                <span class="heading-meta">Danh Mục Đầu Tư</span>
+                                <h2 class="colorlib-heading animate-box">Cập nhật:
+                                    <script>
+                                        // Lấy đối tượng Date hiện tại
+                                        var currentDate = new Date();
+
+                                        // Lấy ngày, tháng và năm hiện tại
+                                        var day = currentDate.getDate();
+                                        var month = currentDate.getMonth() + 1; // Lưu ý tháng bắt đầu từ 0
+                                        var year = currentDate.getFullYear();
+
+                                        // In ra ngày tháng năm hiện tại
+                                        document.write(day + "/" + month + "/" + year);
 
                                     // document.write(new Date().getFullYear());
+                                    </script>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <p>Tổng danh mục đầu tư của <span class="color-name">mCents</span> sẽ được cập nhật vào
+                                    chủ nhật sau mỗi 2 tuần.</p>
+                                <div id="chart-container"></div>
+                                <script>
+                                    // Tạo biểu đồ
+                                    Highcharts.chart('chart-container', {
+                                        credits: {
+                                            enabled: false
+                                        },
+                                        chart: {
+                                            type: 'pie',
+                                            options3d: {
+                                                enabled: true,
+                                                alpha: 45,
+                                                beta: 0
+                                            }
+                                        },
+                                        title: {
+                                            text: 'Tổng Danh Mục Đầu Tư'
+                                        },
+                                        plotOptions: {
+                                            pie: {
+                                                innerSize: 100,
+                                                depth: 45
+                                            }
+                                        },
+                                        tooltip: {
+                                            formatter: function () {
+                                                return '<b>' + this.point.name;
+                                            }
+                                        },
+                                        series: [{
+                                            name: '',
+                                            data: [
+                                                ['Tiền mặt: 1%', 1],
+                                                ['Chứng khoán: 20%', 20],
+                                                ['Các tài sản khác (BĐS, Hợp Đồng Đầu Tư, vv): 9%', 9],
+                                                ['Cryto: 70%', 70],
+                                            ]
+                                        }]
+                                    });
                                 </script>
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                            <p>Tổng danh mục đầu tư của <span class="color-name">mCents</span> sẽ được cập nhật vào chủ nhật sau mỗi 2 tuần.</p>
-                            <div id="chart-container"></div>
-                            <script>
-                                // Tạo biểu đồ
-                                Highcharts.chart('chart-container', {
-                                    credits: {
-                                        enabled: false
-                                    },
-                                    chart: {
-                                        type: 'pie',
-                                        options3d: {
-                                            enabled: true,
-                                            alpha: 45,
-                                            beta: 0
-                                        }
-                                    },
-                                    title: {
-                                        text: 'Tổng Danh Mục Đầu Tư'
-                                    },
-                                    plotOptions: {
-                                        pie: {
-                                            innerSize: 100,
-                                            depth: 45
-                                        }
-                                    },
-                                    tooltip: {
-                                        formatter: function() {
-                                            return '<b>'+ this.point.name;
-                                        }
-                                    },
-                                    series: [{
-                                        name: '',
-                                        data: [
-                                            ['Tiền mặt: 1%', 1],
-                                            ['Chứng khoán: 20%', 20],
-                                            ['Các tài sản khác (BĐS, Hợp Đồng Đầu Tư, vv): 9%', 9],
-                                            ['Cryto: 70%', 70],
-                                        ]
-                                    }]
-                                });
-                            </script>
-                            <div id="chart-cryto-container"></div>
-                            <script>
-                                // Tạo biểu đồ
-                                Highcharts.chart('chart-cryto-container', {
-                                    credits: {
-                                        enabled: false
-                                    },
-                                    chart: {
-                                        type: 'pie',
-                                        options3d: {
-                                            enabled: true,
-                                            alpha: 45,
-                                            beta: 0
-                                        }
-                                    },
-                                    title: {
-                                        text: 'Danh Mục Cryto'
-                                    },
-                                    plotOptions: {
-                                        pie: {
-                                            innerSize: 100,
-                                            depth: 45
-                                        }
-                                    },
-                                    tooltip: {
-                                        formatter: function() {
-                                            return '<b>'+ this.point.name;
-                                        }
-                                    },
-                                    series: [{
-                                        name: '',
-                                        data: [
-                                            ['ETH: 2%', 2],
-                                            ['USDT: 35%', 35],
-                                            ['DOGE: 5%', 5],
-                                            ['DOT: 3%', 3],
-                                            ['SOL: 2%', 2],
-                                            ['Khác: 3%', 3],
-                                            ['BNB: 40%', 40],
-                                            ['Bitcoin: 10%', 10],
-                                        ]
-                                    }]
-                                });
-                            </script>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="colorlib-services" data-section="rules">
-                <div class="colorlib-narrow-content">
-                    <div class="row">
-                        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                            <span class="heading-meta">Những Điều Cần Biết Trong Đầu Tư</span>
-                            <h2 class="colorlib-heading">7 nguyên tắc đầu tư</h2>
-                            <p>
-                                Thông tin chỉ dùng để tham khảo, không phải lời khuyên đầu tư vì mỗi người có mỗi vị thế, thời gian và nhu cầu đầu tư khác nhau.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row row-pt-md">
-                        <div class="col-md-4 text-center animate-box">
-                            <div class="services color-2">
-                                <span class="icon">
-                                <i>1</i>
-                                </span>
-                                <div class="desc">
-                                    <h3>
-                                        <span class="fa-stack">
-                                            <i class="fas fa-circle fa-stack-2x color-2"></i>
-                                            <i class="fas fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
-                                        </span> Đừng tin ai
-                                    </h3>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center animate-box">
-                            <div class="services color-1">
-                                <span class="icon">
-                                <i>2</i>
-                                </span>
-                                <div class="desc">
-                                    <h3>
-                                       <span class="fa-stack">
-                                            <i class="fas fa-circle fa-stack-2x color-1"></i>
-                                            <i class="fas fa-search fa-stack-1x fa-inverse"></i>
-                                        </span> Tự tìm hiểu
-                                    </h3>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center animate-box">
-                            <div class="services color-3">
-                                <span class="icon">
-                                <i>3</i>
-                                </span>
-                                <div class="desc">
-                                    <h3>
-                                       <span class="fa-stack">
-                                            <i class="fas fa-circle fa-stack-2x color-3"></i>
-                                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                                       </span> Tự Giữ Tài Sản
-                                    </h3>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center animate-box">
-                            <div class="services color-4">
-                                <span class="icon">
-                                <i>4</i>
-                                </span>
-                                <div class="desc">
-                                    <h3>
-                                       <span class="fa-stack">
-                                            <i class="fas fa-circle fa-stack-2x color-4"></i>
-                                            <i class="fas fa-hand-holding-usd fa-stack-1x fa-inverse"></i>
-                                       </span> Nhớ Chốt Lời
-                                    </h3>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center animate-box">
-                            <div class="services color-5">
-                                <span class="icon">
-                                <i>5</i>
-                                </span>
-                                <div class="desc">
-                                    <h3>
-                                       <span class="fa-stack">
-                                            <i class="fas fa-circle fa-stack-2x color-5"></i>
-                                            <i class="fas fa-chart-pie fa-stack-1x fa-inverse"></i>
-                                       </span> Phân Bổ Vốn
-                                    </h3>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center animate-box">
-                            <div class="services color-6">
-                                <span class="icon">
-                                <i>6</i>
-                                </span>
-                                <div class="desc">
-                                    <h3>
-                                        <span class="fa-stack">
-                                            <i class="fas fa-circle fa-stack-2x color-6"></i>
-                                            <i class="fas fa-handshake-slash fa-stack-1x fa-inverse"></i>
-                                       </span> Không Vay Mượn
-                                    </h3>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center animate-box">
-                            <div class="services color-7">
-                                <span class="icon">
-                                <i>7</i>
-                                </span>
-                                <div class="desc">
-                                    <h3>
-                                        <span class="fa-stack">
-                                            <i class="fas fa-circle fa-stack-2x color-7"></i>
-                                            <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
-                                       </span> Zoom Out, Dài Hạn
-                                    </h3>
-                                    <p></p>
-                                </div>
+                                <div id="chart-cryto-container"></div>
+                                <script>
+                                    // Tạo biểu đồ
+                                    Highcharts.chart('chart-cryto-container', {
+                                        credits: {
+                                            enabled: false
+                                        },
+                                        chart: {
+                                            type: 'pie',
+                                            options3d: {
+                                                enabled: true,
+                                                alpha: 45,
+                                                beta: 0
+                                            }
+                                        },
+                                        title: {
+                                            text: 'Danh Mục Cryto'
+                                        },
+                                        plotOptions: {
+                                            pie: {
+                                                innerSize: 100,
+                                                depth: 45
+                                            }
+                                        },
+                                        tooltip: {
+                                            formatter: function () {
+                                                return '<b>' + this.point.name;
+                                            }
+                                        },
+                                        series: [{
+                                            name: '',
+                                            data: [
+                                                ['ETH: 2%', 2],
+                                                ['USDT: 35%', 35],
+                                                ['DOGE: 5%', 5],
+                                                ['DOT: 3%', 3],
+                                                ['SOL: 2%', 2],
+                                                ['Khác: 3%', 3],
+                                                ['BNB: 40%', 40],
+                                                ['Bitcoin: 10%', 10],
+                                            ]
+                                        }]
+                                    });
+                                </script>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section class="colorlib-work" data-section="services">
-                <div class="colorlib-narrow-content">
-                    <div class="row border">
-                        <div class="col-md-12 animate-box border"
-                             data-animate-effect="fadeInLeft">
-                            <span class="heading-meta">Sản Phẩm Của Đối Tác</span>
-                            <h2 class="colorlib-heading animate-box">Các Lựa Chọn Sàn Giao Dịch, Thiết Bị Nếu Bạn Quan Tâm</h2>
-                            <p>
-                                <span class="fa-stack">
-                                    <i class="fas fa-circle fa-stack-2x color-3"></i>
-                                    <i class="fas fa-star fa-stack-1x fa-inverse"></i>
-                                </span> Với những bạn chưa có tài khoản để mua bán và giao dịch.
-                                Các bạn có thể mở tài khoản trên các sàn theo mô tả <a href="#" data-nav-section="sangiaodich">phía dưới</a>
-                                để nhận được các ưu đãi.
-                            </p>
-                            <p>
-                                <span class="fa-stack">
-                                    <i class="fas fa-circle fa-stack-2x color-2"></i>
-                                    <i class="fas fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
-                                </span> Đừng lưu trữ quá nhiều tiền trên sàn, chỉ để khi nào cần giao dịch. Hãy tìm hiểu tự giữ Crypto của mình.
-                                <br>Các bạn có thể tham khảo một số ví lạnh mô tả <a href="#" data-nav-section="work2">phía dưới</a> để lưu trữ tài sản của mình.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row row-bottom-padded-sm animate-box border" data-animate-effect="fadeInLeft">
-                        <div class="col-md-6 border">
-                            <p class="work-menu">
-                                <span><a href="#" class="" data-nav-section="work1" data-section="sangiaodich">Sàn Giao Dịch</a></span>
-                                <span><a href="#" data-nav-section="work2" data-section="thietbidientu">Cửa Hàng Thiết Bị Điện Tử</a></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" data-section="work1">
-                            <div class="project">
-                                <a target="_blank" href="https://accounts.binance.com/register?ref=209258462" class="project-img">
-                                    <img src="img/binance.jpeg"
-                                        class="img-responsive" alt="Link Giới Thiệu Binance">
-                                    <div class="project-desc">
-                                        <i class="fas fa-gift"></i>
-                                        <span>
-                                            Đăng ký ngay để nhận Voucher hoàn phí giao dịch.
-                                        </span>
-                                    </div>
-                                </a>
+                </section>
+                <section class="colorlib-services" data-section="rules">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <span class="heading-meta">Những Điều Cần Biết Trong Đầu Tư</span>
+                                <h2 class="colorlib-heading">7 nguyên tắc đầu tư</h2>
+                                <p>
+                                    Thông tin chỉ dùng để tham khảo, không phải lời khuyên đầu tư vì mỗi người có mỗi vị
+                                    thế, thời gian và nhu cầu đầu tư khác nhau.
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight" data-section="work3">
-                            <div class="project">
-                                <a target="_blank" href="https://www.okx.com/join/69341872" class="project-img">
-                                    <img src="img/okx.png"
-                                         class="img-responsive" alt="Link Giới Thiệu OKX">
-                                    <div class="project-desc">
-                                        <i class="fas fa-gift"></i>
-                                        <span>
-                                            Đăng ký ngay để nhận hộp bí ẩn với phần thưởng tiền mã hóa trị giá lên đến $10.000. Phần thưởng là BTC, ETH, OKB, DOGE, FIL, SHIB, DOT và thẻ giảm giá.
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" data-section="work2">
-                            <div class="project" style="background-image: url(img/thietbidientu.gif);">
-                                <div class="desc">
-                                    <div class="con">
+                        <div class="row row-pt-md">
+                            <div class="col-md-4 text-center animate-box">
+                                <div class="services color-2">
+                                    <span class="icon">
+                                        <i>1</i>
+                                    </span>
+                                    <div class="desc">
                                         <h3>
-                                            <a href="https://click.adpia.vn/tracking.php?m=tiki&a=A100082399&l=9999">Tiki</a>
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x color-2"></i>
+                                                <i class="fas fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
+                                            </span> Đừng tin ai
                                         </h3>
-                                        <span>Ví lạnh Ledger, SafePal...</span>
-                                        <div class="project-shopping">
-                                            <a href="https://click.adpia.vn/tracking.php?m=tiki&a=A100082399&l=9999" target="_blank" class="shopping-img">
-                                                <img src="https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMkNGRFE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ae6acdae378d22c7219be9e6ca6011a7e231612a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJc0FXa0NMQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--15c3f2f3e11927673ae52b71712c1f66a7a1b7bd/tiki-corporation-logo.png"
-                                                     alt="TiKi" />
-                                            </a>
-                                        </div>
-                                        <p class="icon">
-                                            <span><a href="#"><i class="icon-eye"></i> 22</a></span>
-                                            <span><a href="#"><i class="icon-heart"></i> 14</a></span>
-                                        </p>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight" data-section="work4">
-                            <div class="project" style="background-image: url(img/shopee.gif);">
-                                <div class="desc color-shopee">
-                                    <div class="con">
-                                        <h3><a href="https://click.adpia.vn/tracking.php?m=shopee&a=A100082399&l=9999" class="color-shopee">Shopee</a></h3>
-                                        <span>Ví lạnh Ledger, SafePal...</span>
-                                        <div class="project-shopping">
-                                            <a href="https://click.adpia.vn/tracking.php?m=shopee&a=A100082399&l=9999" target="_blank" class="shopping-img">
-                                                <img src="data:image/png;base64,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"
-                                                     alt="Shopee" />
-                                            </a>
-                                        </div>
-                                        <p class="icon">
-                                            <span><a href="#"><i class="icon-eye"></i> 13</a></span>
-                                            <span><a href="#"><i class="icon-heart"></i> 8</a></span>
-                                        </p>
+                            <div class="col-md-4 text-center animate-box">
+                                <div class="services color-1">
+                                    <span class="icon">
+                                        <i>2</i>
+                                    </span>
+                                    <div class="desc">
+                                        <h3>
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x color-1"></i>
+                                                <i class="fas fa-search fa-stack-1x fa-inverse"></i>
+                                            </span> Tự tìm hiểu
+                                        </h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center animate-box">
+                                <div class="services color-3">
+                                    <span class="icon">
+                                        <i>3</i>
+                                    </span>
+                                    <div class="desc">
+                                        <h3>
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x color-3"></i>
+                                                <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                                            </span> Tự Giữ Tài Sản
+                                        </h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center animate-box">
+                                <div class="services color-4">
+                                    <span class="icon">
+                                        <i>4</i>
+                                    </span>
+                                    <div class="desc">
+                                        <h3>
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x color-4"></i>
+                                                <i class="fas fa-hand-holding-usd fa-stack-1x fa-inverse"></i>
+                                            </span> Nhớ Chốt Lời
+                                        </h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center animate-box">
+                                <div class="services color-5">
+                                    <span class="icon">
+                                        <i>5</i>
+                                    </span>
+                                    <div class="desc">
+                                        <h3>
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x color-5"></i>
+                                                <i class="fas fa-chart-pie fa-stack-1x fa-inverse"></i>
+                                            </span> Phân Bổ Vốn
+                                        </h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center animate-box">
+                                <div class="services color-6">
+                                    <span class="icon">
+                                        <i>6</i>
+                                    </span>
+                                    <div class="desc">
+                                        <h3>
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x color-6"></i>
+                                                <i class="fas fa-handshake-slash fa-stack-1x fa-inverse"></i>
+                                            </span> Không Vay Mượn
+                                        </h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center animate-box">
+                                <div class="services color-7">
+                                    <span class="icon">
+                                        <i>7</i>
+                                    </span>
+                                    <div class="desc">
+                                        <h3>
+                                            <span class="fa-stack">
+                                                <i class="fas fa-circle fa-stack-2x color-7"></i>
+                                                <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
+                                            </span> Zoom Out, Dài Hạn
+                                        </h3>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="colorlib-blog" data-section="blog">
-                <div class="colorlib-narrow-content">
-                    <div class="row">
-                        <div class="col-md-12 animate-box"
-                             data-animate-effect="fadeInLeft">
-                            <span class="heading-meta">Bài Viết Của Cộng Đồng</span>
-                            <h2 class="colorlib-heading">Tin Tức | Kiến Thức | Hướng Dẫn</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                            <div class="blog-entry">
-                                <a href="blog.html" class="blog-img"><img
-                                        src="https://stormgain.com/sites/default/files/2020-10/bitcoin-halving-timeline.jpg"
-                                        class="img-responsive" alt="Quan Điểm Đầu Tư Bạn Cần Biết | Bitcoin Halving Index"></a>
-                                <div class="desc">
-                                    <span><i class="fa fa-calendar"></i><small> 15 Tháng 04, 2023</small> | <small> Tin Tức </small> | <small> <i
-                                            class="icon-bubble3"></i> 4</small></span>
-                                    <h3><a href="blog.html">Quan Điểm Đầu Tư Bạn Cần Biết | Bitcoin Halving Index</a></h3>
-                                    <p>
-                                        Thị trường chứng khoán hồi phục nhẹ và các nhà đầu tư
-                                        dường như quá mệt mỏi với những thông tin từ Fed và lãi suất.
-                                        Bên cạnh các thông tin về thị trường, Thuận cũng muốn gửi tới các bạn những...
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-                            <div class="blog-entry">
-                                <a href="blog.html" class="blog-img"><img
-                                        src="https://blogtienao.com/wp-content/uploads/2023/01/SEC-tien-dien-tu.jpg"
-                                        class="img-responsive" alt="Chứng khoán là gì? Tại sao SEC gọi hầu hết Crypto là chứng khoán"></a>
-                                <div class="desc">
-                                    <span><i class="fa fa-calendar"></i><small> 28 Tháng 12, 2022</small> | <small> Kiến Thức </small> | <small> <i
-                                            class="icon-bubble3"></i> 4</small></span>
-                                    <h3><a href="blog.html">Chứng khoán là gì? Tại sao SEC gọi hầu hết Crypto là chứng khoán</a></h3>
-                                    <p>Hẳn là một dự án Crypto thì ai cũng cảm thấy sợ hãi khi bị gọi tên là chứng khoán. Nhưng còn khiếp vía hơn khu Chủ tịch Ủy ban Giao dịch và Chứng khoán Hoa Kỳ (SEC) là Gary Gensler gọi hầu hết các dự án Crypto ngoài kia đều là chứng khoán.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-                            <div class="blog-entry">
-                                <a href="blog.html" class="blog-img"><img
-                                        src="img/naprutokx.png"
-                                        class="img-responsive" alt="Nạp/Rút tiền trên OKX, Giao dịch P2P cho nhà quảng cáo"></a>
-                                <div class="desc">
-                                    <span><i class="fa fa-calendar"></i><small> 10 Tháng 03, 2023</small> | <small> Hướng Dẫn </small> | <small> <i
-                                            class="icon-bubble3"></i> 4</small></span>
-                                    <h3><a href="blog.html">Nạp/Rút tiền trên OKX, Giao dịch P2P cho nhà quảng cáo</a></h3>
-                                    <p>Là một trong những sàn giao dịch tiền mã hoá giao ngay và phái sinh lớn nhất thế giới, OKX là nơi bạn có thể đa dạng hóa danh mục giao dịch của mình một cách thuận tiện với một loạt các công cụ giao dịch phái sinh.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 animate-box">
-                            <p><a href="#" class="btn btn-primary btn-lg btn-load-more">Tải thêm <i
-                                    class="icon-reload"></i></a></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="colorlib-contact" data-section="contact">
-                <div class="colorlib-narrow-content">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-                             data-animate-effect="fadeInLeft">
-                            <span class="heading-meta">Team <span class="color-name">mCents</span></span>
-                            <h2 class="colorlib-heading">Thông Tin Liên Hệ</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="colorlib-feature colorlib-feature-sm animate-box"
-                                 data-animate-effect="fadeInLeft">
-                                <div class="colorlib-icon">
-                                    <i class="icon-globe-outline"></i>
-                                </div>
-                                <div class="colorlib-text">
-                                    <p>
-                                        <a href="#">
-                                            <span class="__cf_email__">mcentsbancomoi@gmail.com</span>
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="colorlib-feature colorlib-feature-sm animate-box"
-                                 data-animate-effect="fadeInLeft">
-                                <div class="colorlib-icon">
-                                    <i class="icon-map"></i>
-                                </div>
-                                <div class="colorlib-text">
-                                    <p>495 Tô Hiến Thành, Quận 10, TP. Hồ Chí Minh</p>
-                                </div>
-                            </div>
-                            <div class="colorlib-feature colorlib-feature-sm animate-box"
-                                 data-animate-effect="fadeInLeft">
-                                <div class="colorlib-icon">
-                                    <i class="icon-phone"></i>
-                                </div>
-                                <div class="colorlib-text">
-                                    <p><a href="tel://">+84 82 928 6417</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-md-push-1">
-                            <div class="row">
-                                <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box"
-                                     data-animate-effect="fadeInRight">
-                                    <form action="">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Tên">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Tiêu Đề">
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea name="" id="message" cols="30" rows="7" class="form-control"
-                                                      placeholder="Tin Nhắn"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="submit" class="btn btn-primary btn-send-message"
-                                                   value="Gửi">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 animate-box"
-                             data-animate-effect="fadeInLeft">
-                            <h2 class="colorlib-heading">Mạng Xã Hội | Cộng Đồng</h2>
-                            <p>
-                                <a href="https://www.youtube.com/@mcents-bancomoi" target="_blank">
+                <section class="colorlib-work" data-section="services">
+                    <div class="colorlib-narrow-content">
+                        <div class="row border">
+                            <div class="col-md-12 animate-box border" data-animate-effect="fadeInLeft">
+                                <span class="heading-meta">Sản Phẩm Của Đối Tác</span>
+                                <h2 class="colorlib-heading animate-box">Các Lựa Chọn Sàn Giao Dịch, Thiết Bị Nếu Bạn
+                                    Quan Tâm</h2>
+                                <p>
                                     <span class="fa-stack">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                                <a href="#">
+                                        <i class="fas fa-circle fa-stack-2x color-3"></i>
+                                        <i class="fas fa-star fa-stack-1x fa-inverse"></i>
+                                    </span> Với những bạn chưa có tài khoản để mua bán và giao dịch.
+                                    Các bạn có thể mở tài khoản trên các sàn theo mô tả <a href="#"
+                                        data-nav-section="sangiaodich">phía dưới</a>
+                                    để nhận được các ưu đãi.
+                                </p>
+                                <p>
                                     <span class="fa-stack">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                                <a href="#">
-                                    <span class="fa-stack">
-                                        <i class="fas fa-circle fa-stack-2x"></i>
-                                        <i class="fab fa-telegram-plane fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </p>
+                                        <i class="fas fa-circle fa-stack-2x color-2"></i>
+                                        <i class="fas fa-exclamation-triangle fa-stack-1x fa-inverse"></i>
+                                    </span> Đừng lưu trữ quá nhiều tiền trên sàn, chỉ để khi nào cần giao dịch. Hãy tìm
+                                    hiểu tự giữ Crypto của mình.
+                                    <br>Các bạn có thể tham khảo một số ví lạnh mô tả <a href="#"
+                                        data-nav-section="work2">phía dưới</a> để lưu trữ tài sản của mình.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section class="colorlib-about" data-section="policy">
-                <div class="colorlib-narrow-content">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                <div class="col-md-12">
-                                    <div class="about-desc">
-                                        <span class="heading-meta">Điều khoản và chính sách của <span class="color-name">mCents</span></span>
-                                        <h2 class="colorlib-heading">Tuyên bố miễn trừ trách nhiệm</h2>
-                                        <p>
-                                            Truy cập và tham gia các hoạt động tại <span class="color-name">mCents</span> cũng có nghĩa là bạn đồng ý với những điều khoản của chúng tôi. Chúng tôi bảo lưu quyền sửa đổi điều khoản này mà có thể không thông báo trước. Bạn có trách nhiệm thường xuyên kiểm tra lại trang này để đảm bảo rằng mình luôn cập nhật bản mới nhất. Điều khoản này có hiệu lực ngay sau khi được đăng tải.
-                                        </p>
-                                        <p>
-                                            Bạn được khuyến cáo nên đủ 13 tuổi trở lên để tham gia, đăng ký làm thành viên và truy cập nội dung từ <span class="color-name">mCents</span>. Nếu chưa đủ 13 tuổi hoặc không hài lòng với website, các thể lệ của Website hay trong điều khoản này, bạn nên ngừng truy cập ngay lập tức.
-                                        </p>
-                                        <p>
-                                            Bất kỳ và tất cả các thông tin được cung cấp bởi <span class="color-name">mCents</span> được cung cấp dưới dạng “chỉ là thông tin” và <span class="color-name">mCents</span> không có bảo đảm nào, dù là rõ ràng hay ngụ ý, bao gồm nhưng không giới hạn, bảo đảm về khả năng mua bán hoặc phù hợp cho một mục đích cụ thể.
-                                        </p>
-                                        <p>
-                                            Tất cả từ ngữ “của chúng tôi”, “chúng tôi”, hoặc “công ty” trong văn bản này và trong thông cáo chọn tham gia (opt-in) được dùng để chỉ Team <span class="color-name">mCents</span> và các đối tác khác .
-                                        </p>
-                                        <h2 class="colorlib-heading">Tiêu chuẩn cộng đồng</h2>
-                                        <p>
-                                            Hàng ngày, mọi người sử dụng website như một nơi cập nhật thông tin về thị trường, công nghệ, kiến thức về tiền mã hóa, tài chính.
-                                        </p>
-                                        <p>
-                                            An toàn: Chúng tôi cam kết biến website thành một không gian an toàn. Những lời lẽ đe dọa mà có khả năng bài trừ, hăm dọa người khác hoặc khiến họ phải im lặng sẽ không được phép trên website.
-                                        </p>
-                                        <p>
-                                            Quyền riêng tư: Chúng tôi cam kết bảo vệ quyền riêng tư và thông tin của cá nhân. Nhờ có quyền riêng tư, mọi người có thể tự do là chính mình, chọn cách thức và thời điểm chia sẻ trên website cũng như có thể kết nối dễ dàng hơn.
-                                        </p>
-                                        <h2 class="colorlib-heading">Bản quyền và việc sử dụng lại thông tin</h2>
-                                        <p>
-                                            Tất cả những tài liệu và nội dung (bao gồm, nhưng không có giới hạn, thông tin, hình ảnh, trang web, âm thanh, phần mềm (bao gồm mã nguồn, giao diện, cấu trúc trang web), video, diện mạo và sắc thái, thiết kế và những tài liệu biên soạn) trên website thuộc quyền sở hữu trí tuệ của chúng tôi và những người được chúng tôi cấp giấy phép. Ngoại trừ những điều đã cung cấp trong phần điều khoản này, việc sử dụng website sẽ không cung cấp cho bạn bất kỳ quyền hay giấy phép nào cho những tài liệu và nội dung mà bạn đã truy cập trên trang web.
-                                        </p>
-                                        <p>
-                                            Bạn có thể truy cập vào trang web và chúng tôi rất hoan nghênh bạn in những tài liệu để sử dụng cho nhu cầu cá nhân một cách đúng luật, mang tính chất cá nhân và sử dụng vào mục đích phi thương mại. Bạn phải được chúng tôi chấp thuận bằng văn bản để sử dụng nội dung hay bất cứ hình ảnh, tư liệu nào của website vào mục đích thương mại (bao gồm nhưng không giới hạn việc tái sản xuất, truyền tải, công khai thực hiện, phân phối, mô phỏng, dịch, sửa đổi, chia sẻ cho bất kỳ người nào, tạo ra sản phẩm phát sinh của các tài liệu hoặc sử dụng).
-                                        </p>
+                        <div class="row row-bottom-padded-sm animate-box border" data-animate-effect="fadeInLeft">
+                            <div class="col-md-6 border">
+                                <p class="work-menu">
+                                    <span><a href="#" class="" data-nav-section="work1" data-section="sangiaodich">Sàn
+                                            Giao Dịch</a></span>
+                                    <span><a href="#" data-nav-section="work2" data-section="thietbidientu">Cửa Hàng
+                                            Thiết Bị Điện Tử</a></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" data-section="work1">
+                                <div class="project">
+                                    <a target="_blank" href="https://accounts.binance.com/register?ref=209258462"
+                                        class="project-img">
+                                        <img src="img/binance.jpeg" class="img-responsive"
+                                            alt="Link Giới Thiệu Binance">
+                                        <div class="project-desc">
+                                            <i class="fas fa-gift"></i>
+                                            <span>
+                                                Đăng ký ngay để nhận Voucher hoàn phí giao dịch.
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 animate-box" data-animate-effect="fadeInRight" data-section="work3">
+                                <div class="project">
+                                    <a target="_blank" href="https://www.okx.com/join/69341872" class="project-img">
+                                        <img src="img/okx.png" class="img-responsive" alt="Link Giới Thiệu OKX">
+                                        <div class="project-desc">
+                                            <i class="fas fa-gift"></i>
+                                            <span>
+                                                Đăng ký ngay để nhận hộp bí ẩn với phần thưởng tiền mã hóa trị giá lên
+                                                đến $10.000. Phần thưởng là BTC, ETH, OKB, DOGE, FIL, SHIB, DOT và thẻ
+                                                giảm giá.
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" data-section="work2">
+                                <div class="project" style="background-image: url(img/thietbidientu.gif);">
+                                    <div class="desc">
+                                        <div class="con">
+                                            <h3>
+                                                <a
+                                                    href="https://click.adpia.vn/tracking.php?m=tiki&a=A100082399&l=9999">Tiki</a>
+                                            </h3>
+                                            <span>Ví lạnh Ledger, SafePal...</span>
+                                            <div class="project-shopping">
+                                                <a href="https://click.adpia.vn/tracking.php?m=tiki&a=A100082399&l=9999"
+                                                    target="_blank" class="shopping-img">
+                                                    <img src="https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMkNGRFE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ae6acdae378d22c7219be9e6ca6011a7e231612a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJc0FXa0NMQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--15c3f2f3e11927673ae52b71712c1f66a7a1b7bd/tiki-corporation-logo.png"
+                                                        alt="TiKi" />
+                                                </a>
+                                            </div>
+                                            <p class="icon">
+                                                <span><a href="#"><i class="icon-eye"></i> 22</a></span>
+                                                <span><a href="#"><i class="icon-heart"></i> 14</a></span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="hire">
-                                        <h2><span class="color-name">mCents</span> hy vọng mang lại nhiều thông tin giá trị cho các bạn.</h2>
-                                        <a href="#" class="btn-hire" data-nav-section="support">Hướng Dẫn Miễn Phí</a>
+                            <div class="col-md-6 animate-box" data-animate-effect="fadeInRight" data-section="work4">
+                                <div class="project" style="background-image: url(img/shopee.gif);">
+                                    <div class="desc color-shopee">
+                                        <div class="con">
+                                            <h3><a href="https://click.adpia.vn/tracking.php?m=shopee&a=A100082399&l=9999"
+                                                    class="color-shopee">Shopee</a></h3>
+                                            <span>Ví lạnh Ledger, SafePal...</span>
+                                            <div class="project-shopping">
+                                                <a href="https://click.adpia.vn/tracking.php?m=shopee&a=A100082399&l=9999"
+                                                    target="_blank" class="shopping-img">
+                                                    <img src="data:image/png;base64,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"
+                                                        alt="Shopee" />
+                                                </a>
+                                            </div>
+                                            <p class="icon">
+                                                <span><a href="#"><i class="icon-eye"></i> 13</a></span>
+                                                <span><a href="#"><i class="icon-heart"></i> 8</a></span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+
+                <section class="colorlib-blog" data-section="blog">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <span class="heading-meta">Bài Viết Của Cộng Đồng</span>
+                                <h2 class="colorlib-heading">Tin Tức | Kiến Thức | Hướng Dẫn</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+                                <div class="blog-entry">
+                                    <a href="blog.html" class="blog-img"><img
+                                            src="https://stormgain.com/sites/default/files/2020-10/bitcoin-halving-timeline.jpg"
+                                            class="img-responsive"
+                                            alt="Quan Điểm Đầu Tư Bạn Cần Biết | Bitcoin Halving Index"></a>
+                                    <div class="desc">
+                                        <span><i class="fa fa-calendar"></i><small> 15 Tháng 04, 2023</small> | <small>
+                                                Tin Tức </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+                                        <h3><a href="blog.html">Quan Điểm Đầu Tư Bạn Cần Biết | Bitcoin Halving
+                                                Index</a></h3>
+                                        <p>
+                                            Thị trường chứng khoán hồi phục nhẹ và các nhà đầu tư
+                                            dường như quá mệt mỏi với những thông tin từ Fed và lãi suất.
+                                            Bên cạnh các thông tin về thị trường, Thuận cũng muốn gửi tới các bạn
+                                            những...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+                                <div class="blog-entry">
+                                    <a href="blog.html" class="blog-img"><img
+                                            src="https://blogtienao.com/wp-content/uploads/2023/01/SEC-tien-dien-tu.jpg"
+                                            class="img-responsive"
+                                            alt="Chứng khoán là gì? Tại sao SEC gọi hầu hết Crypto là chứng khoán"></a>
+                                    <div class="desc">
+                                        <span><i class="fa fa-calendar"></i><small> 28 Tháng 12, 2022</small> | <small>
+                                                Kiến Thức </small> | <small> <i class="icon-bubble3"></i>
+                                                4</small></span>
+                                        <h3><a href="blog.html">Chứng khoán là gì? Tại sao SEC gọi hầu hết Crypto là
+                                                chứng khoán</a></h3>
+                                        <p>Hẳn là một dự án Crypto thì ai cũng cảm thấy sợ hãi khi bị gọi tên là chứng
+                                            khoán. Nhưng còn khiếp vía hơn khu Chủ tịch Ủy ban Giao dịch và Chứng khoán
+                                            Hoa Kỳ (SEC) là Gary Gensler gọi hầu hết các dự án Crypto ngoài kia đều là
+                                            chứng khoán.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+                                <div class="blog-entry">
+                                    <a href="blog.html" class="blog-img"><img src="img/naprutokx.png"
+                                            class="img-responsive"
+                                            alt="Nạp/Rút tiền trên OKX, Giao dịch P2P cho nhà quảng cáo"></a>
+                                    <div class="desc">
+                                        <span><i class="fa fa-calendar"></i><small> 10 Tháng 03, 2023</small> | <small>
+                                                Hướng Dẫn </small> | <small> <i class="icon-bubble3"></i>
+                                                4</small></span>
+                                        <h3><a href="blog.html">Nạp/Rút tiền trên OKX, Giao dịch P2P cho nhà quảng
+                                                cáo</a></h3>
+                                        <p>Là một trong những sàn giao dịch tiền mã hoá giao ngay và phái sinh lớn nhất
+                                            thế giới, OKX là nơi bạn có thể đa dạng hóa danh mục giao dịch của mình một
+                                            cách thuận tiện với một loạt các công cụ giao dịch phái sinh.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 animate-box">
+                                <p><a href="#" class="btn btn-primary btn-lg btn-load-more">Tải thêm <i
+                                            class="icon-reload"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="colorlib-contact" data-section="contact">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                                data-animate-effect="fadeInLeft">
+                                <span class="heading-meta">Team <span class="color-name">mCents</span></span>
+                                <h2 class="colorlib-heading">Thông Tin Liên Hệ</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="colorlib-feature colorlib-feature-sm animate-box"
+                                    data-animate-effect="fadeInLeft">
+                                    <div class="colorlib-icon">
+                                        <i class="icon-globe-outline"></i>
+                                    </div>
+                                    <div class="colorlib-text">
+                                        <p>
+                                            <a href="#">
+                                                <span class="__cf_email__">mcentsbancomoi@gmail.com</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="colorlib-feature colorlib-feature-sm animate-box"
+                                    data-animate-effect="fadeInLeft">
+                                    <div class="colorlib-icon">
+                                        <i class="icon-map"></i>
+                                    </div>
+                                    <div class="colorlib-text">
+                                        <p>495 Tô Hiến Thành, Quận 10, TP. Hồ Chí Minh</p>
+                                    </div>
+                                </div>
+                                <div class="colorlib-feature colorlib-feature-sm animate-box"
+                                    data-animate-effect="fadeInLeft">
+                                    <div class="colorlib-icon">
+                                        <i class="icon-phone"></i>
+                                    </div>
+                                    <div class="colorlib-text">
+                                        <p><a href="tel://">+84 82 928 6417</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-md-push-1">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box"
+                                        data-animate-effect="fadeInRight">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Tên">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Tiêu Đề">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea name="" id="message" cols="30" rows="7" class="form-control"
+                                                    placeholder="Tin Nhắn"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-primary btn-send-message"
+                                                    value="Gửi">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <h2 class="colorlib-heading">Mạng Xã Hội | Cộng Đồng</h2>
+                                <p>
+                                    <a href="https://www.youtube.com/@mcents-bancomoi" target="_blank">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fab fa-telegram-plane fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="colorlib-about" data-section="policy">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="col-md-12">
+                                        <div class="about-desc">
+                                            <span class="heading-meta">Điều khoản và chính sách của <span
+                                                    class="color-name">mCents</span></span>
+                                            <h2 class="colorlib-heading">Tuyên bố miễn trừ trách nhiệm</h2>
+                                            <p>
+                                                Truy cập và tham gia các hoạt động tại <span
+                                                    class="color-name">mCents</span> cũng có nghĩa là bạn đồng ý với
+                                                những điều khoản của chúng tôi. Chúng tôi bảo lưu quyền sửa đổi điều
+                                                khoản này mà có thể không thông báo trước. Bạn có trách nhiệm thường
+                                                xuyên kiểm tra lại trang này để đảm bảo rằng mình luôn cập nhật bản mới
+                                                nhất. Điều khoản này có hiệu lực ngay sau khi được đăng tải.
+                                            </p>
+                                            <p>
+                                                Bạn được khuyến cáo nên đủ 13 tuổi trở lên để tham gia, đăng ký làm
+                                                thành viên và truy cập nội dung từ <span
+                                                    class="color-name">mCents</span>. Nếu chưa đủ 13 tuổi hoặc không hài
+                                                lòng với website, các thể lệ của Website hay trong điều khoản này, bạn
+                                                nên ngừng truy cập ngay lập tức.
+                                            </p>
+                                            <p>
+                                                Bất kỳ và tất cả các thông tin được cung cấp bởi <span
+                                                    class="color-name">mCents</span> được cung cấp dưới dạng “chỉ là
+                                                thông tin” và <span class="color-name">mCents</span> không có bảo đảm
+                                                nào, dù là rõ ràng hay ngụ ý, bao gồm nhưng không giới hạn, bảo đảm về
+                                                khả năng mua bán hoặc phù hợp cho một mục đích cụ thể.
+                                            </p>
+                                            <p>
+                                                Tất cả từ ngữ “của chúng tôi”, “chúng tôi”, hoặc “công ty” trong văn bản
+                                                này và trong thông cáo chọn tham gia (opt-in) được dùng để chỉ Team
+                                                <span class="color-name">mCents</span> và các đối tác khác .
+                                            </p>
+                                            <h2 class="colorlib-heading">Tiêu chuẩn cộng đồng</h2>
+                                            <p>
+                                                Hàng ngày, mọi người sử dụng website như một nơi cập nhật thông tin về
+                                                thị trường, công nghệ, kiến thức về tiền mã hóa, tài chính.
+                                            </p>
+                                            <p>
+                                                An toàn: Chúng tôi cam kết biến website thành một không gian an toàn.
+                                                Những lời lẽ đe dọa mà có khả năng bài trừ, hăm dọa người khác hoặc
+                                                khiến họ phải im lặng sẽ không được phép trên website.
+                                            </p>
+                                            <p>
+                                                Quyền riêng tư: Chúng tôi cam kết bảo vệ quyền riêng tư và thông tin của
+                                                cá nhân. Nhờ có quyền riêng tư, mọi người có thể tự do là chính mình,
+                                                chọn cách thức và thời điểm chia sẻ trên website cũng như có thể kết nối
+                                                dễ dàng hơn.
+                                            </p>
+                                            <h2 class="colorlib-heading">Bản quyền và việc sử dụng lại thông tin</h2>
+                                            <p>
+                                                Tất cả những tài liệu và nội dung (bao gồm, nhưng không có giới hạn,
+                                                thông tin, hình ảnh, trang web, âm thanh, phần mềm (bao gồm mã nguồn,
+                                                giao diện, cấu trúc trang web), video, diện mạo và sắc thái, thiết kế và
+                                                những tài liệu biên soạn) trên website thuộc quyền sở hữu trí tuệ của
+                                                chúng tôi và những người được chúng tôi cấp giấy phép. Ngoại trừ những
+                                                điều đã cung cấp trong phần điều khoản này, việc sử dụng website sẽ
+                                                không cung cấp cho bạn bất kỳ quyền hay giấy phép nào cho những tài liệu
+                                                và nội dung mà bạn đã truy cập trên trang web.
+                                            </p>
+                                            <p>
+                                                Bạn có thể truy cập vào trang web và chúng tôi rất hoan nghênh bạn in
+                                                những tài liệu để sử dụng cho nhu cầu cá nhân một cách đúng luật, mang
+                                                tính chất cá nhân và sử dụng vào mục đích phi thương mại. Bạn phải được
+                                                chúng tôi chấp thuận bằng văn bản để sử dụng nội dung hay bất cứ hình
+                                                ảnh, tư liệu nào của website vào mục đích thương mại (bao gồm nhưng
+                                                không giới hạn việc tái sản xuất, truyền tải, công khai thực hiện, phân
+                                                phối, mô phỏng, dịch, sửa đổi, chia sẻ cho bất kỳ người nào, tạo ra sản
+                                                phẩm phát sinh của các tài liệu hoặc sử dụng).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                        <div class="hire">
+                                            <h2><span class="color-name">mCents</span> hy vọng mang lại nhiều thông tin
+                                                giá trị cho các bạn.</h2>
+                                            <a href="#" class="btn-hire" data-nav-section="support">Hướng Dẫn Miễn
+                                                Phí</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
-</div>
-<script data-cfasync="false"
+    <script data-cfasync="false"
         src="https://preview.colorlib.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="https://preview.colorlib.com/theme/jackson/js/jquery.min.js"></script>
-<script src="https://preview.colorlib.com/theme/jackson/js/jquery.easing.1.3.js"></script>
-<script src="https://preview.colorlib.com/theme/jackson/js/bootstrap.min.js"></script>
-<script src="https://preview.colorlib.com/theme/jackson/js/jquery.waypoints.min.js"></script>
-<script src="https://preview.colorlib.com/theme/jackson/js/jquery.flexslider-min.js"></script>
-<script src="https://preview.colorlib.com/theme/jackson/js/owl.carousel.min.js"></script>
-<script src="https://preview.colorlib.com/theme/jackson/js/jquery.countTo.js"></script>
-<script>
-    $(document).ready(function () {
-        $('a[data-nav-section]').click(function () {
-            var section = $(this).data('nav-section');
-            $('html, body').animate({
-                scrollTop: $('[data-section="' + section + '"]').offset().top
-            }, 500);
-            return false;
+    <script src="https://preview.colorlib.com/theme/jackson/js/jquery.min.js"></script>
+    <script src="https://preview.colorlib.com/theme/jackson/js/jquery.easing.1.3.js"></script>
+    <script src="https://preview.colorlib.com/theme/jackson/js/bootstrap.min.js"></script>
+    <script src="https://preview.colorlib.com/theme/jackson/js/jquery.waypoints.min.js"></script>
+    <script src="https://preview.colorlib.com/theme/jackson/js/jquery.flexslider-min.js"></script>
+    <script src="https://preview.colorlib.com/theme/jackson/js/owl.carousel.min.js"></script>
+    <script src="https://preview.colorlib.com/theme/jackson/js/jquery.countTo.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a[data-nav-section]').click(function () {
+                var section = $(this).data('nav-section');
+                $('html, body').animate({
+                    scrollTop: $('[data-section="' + section + '"]').offset().top
+                }, 500);
+                return false;
+            });
         });
-    });
-</script>
-<script src="js/main.js"></script>
+    </script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
